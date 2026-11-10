@@ -91,6 +91,12 @@ Un sistema automático que:
 
 ## 9. Producto: qué ve la gente
 
+**Canal de video: "¿Hicieron alguna wea por Chile?"**. Su tono es crítico y directo, con humor chileno. El blanco es el Congreso completo, nunca un sector político. Tiene tres formatos:
+- **Capítulo 0, presentación:** qué somos, por qué existimos, de dónde sacamos los datos y cómo funciona el sistema. Guion en [guiones/00-presentacion.md](../guiones/00-presentacion.md).
+- **Capítulo diario:** cuánto trabajaron, qué votaron, en qué te afecta, quiénes no votaron o faltaron y el cahuín.
+- **Ranking semanal:** quiénes más faltan y menos trabajan, con nombre, apellido, distrito, partido y qué hacen. Necesita el historial de asistencia en la base.
+
+
 - **"Hoy en el Congreso":** tres a cinco puntos en lenguaje simple por cada cámara.
 - **Ficha de proyecto:** línea de tiempo visual del recorrido, velocímetro y cómo votó cada partido.
 - **Cómo funciona:** explicadores del camino de una ley, qué hace cada poder, qué es una urgencia o una comisión mixta.
