@@ -2,7 +2,7 @@
 
 Dos motores:
 - ElevenLabs (recomendado: suena humano). Se activa si existe ELEVENLABS_API_KEY.
-  Voz: ELEVENLABS_VOICE_ID (elige una voz femenina con acento chileno en la Voice Library de ElevenLabs).
+  Voz: la del canal (VOZ_CANAL); ELEVENLABS_VOICE_ID permite probar otra.
 - edge-tts (gratis, de respaldo): voces neuronales de Microsoft. Suena más sintético.
 """
 from __future__ import annotations
@@ -19,6 +19,8 @@ from mutagen.mp3 import MP3
 VOZ_EDGE = "es-CL-CatalinaNeural"  # mujer, Chile (respaldo)
 VELOCIDAD_EDGE = "+18%"  # ritmo de redes: rápido pero entendible
 ELEVEN_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voz}/with-timestamps"
+# Voz oficial del canal (elegida en la Voice Library de ElevenLabs): https://elevenlabs.io/voices/dZFAIFXrSaHlJY1R7xj2
+VOZ_CANAL = "dZFAIFXrSaHlJY1R7xj2"
 # Ajustes de voz: estabilidad baja = más natural y expresiva; style suave para un tono cálido y cercano.
 ELEVEN_AJUSTES = {"stability": 0.38, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True, "speed": 1.12}
 
@@ -47,9 +49,7 @@ def _palabras_desde_caracteres(al: dict) -> list[dict]:
 
 
 def _elevenlabs(texto: str, destino: Path, texto_previo: str | None, texto_siguiente: str | None) -> list[dict]:
-    voz = os.getenv("ELEVENLABS_VOICE_ID")
-    if not voz:
-        raise SystemExit("Falta ELEVENLABS_VOICE_ID (id de la voz elegida en ElevenLabs)")
+    voz = os.getenv("ELEVENLABS_VOICE_ID") or VOZ_CANAL
     cuerpo = {"text": texto, "model_id": os.getenv("ELEVENLABS_MODELO", "eleven_multilingual_v2"),
               "voice_settings": ELEVEN_AJUSTES}
     # el contexto de los segmentos vecinos mantiene una entonación continua entre escenas
