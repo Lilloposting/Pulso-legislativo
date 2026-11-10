@@ -31,16 +31,16 @@ export const Cahuin: React.FC<{ cahuines: TCahuin[] }> = ({ cahuines }) => {
           color: "#1a0a0a",
           fontFamily: fuenteTitulos,
           fontWeight: 900,
-          fontSize: 120,
+          fontSize: 96,
           padding: "6px 40px",
           transform: `rotate(-4deg) scale(${0.6 + 0.4 * sello})`,
           boxShadow: `12px 12px 0 ${color.rojo}`,
         }}
       >
-        CAHUÍN
+        OJO CON ESTO
       </div>
       <div style={{ textAlign: "center", fontFamily: fuenteTexto, fontWeight: 800, color: color.blanco, letterSpacing: 6, fontSize: 30, marginTop: 30 }}>
-        DEL DÍA · SEGÚN EL REGISTRO OFICIAL
+        VOTARON DISTINTO A SU PARTIDO · REGISTRO OFICIAL
       </div>
       <div style={{ marginTop: 60, display: "flex", flexDirection: "column", gap: 26 }}>
         {lista.map((c, i) => {
