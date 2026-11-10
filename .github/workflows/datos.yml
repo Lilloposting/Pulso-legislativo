@@ -1,0 +1,61 @@
+name: Datos legislativos
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # todos los días 09:00 UTC = 06:00 Chile (verano) / 05:00 (invierno)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "diario o historico"
+        type: choice
+        options: [diario, historico]
+        default: diario
+      desde:
+        description: "historico: año inicial"
+        default: "2018"
+      hasta:
+        description: "historico: año final (vacío = año actual)"
+        default: ""
+      solo:
+        description: "historico: un paso (base, proyectos, fichas, votaciones, sesiones) o vacío = todos"
+        default: ""
+
+concurrency:
+  group: datos-legislativos
+  cancel-in-progress: false
+
+jobs:
+  cargar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Carga diaria
+        if: github.event_name == 'schedule' || inputs.modo == 'diario'
+        run: python -m scrapers.diario --dias 3
+
+      - name: Carga histórica
+        if: github.event_name == 'workflow_dispatch' && inputs.modo == 'historico'
+        run: |
+          ARGS="--desde ${{ inputs.desde }}"
+          [ -n "${{ inputs.hasta }}" ] && ARGS="$ARGS --hasta ${{ inputs.hasta }}"
+          [ -n "${{ inputs.solo }}" ] && ARGS="$ARGS --solo ${{ inputs.solo }}"
+          python -m scrapers.historico $ARGS
+
+      - name: Respaldo del dato crudo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ github.run_id }}
+          path: data/raw/
+          retention-days: 30
+          if-no-files-found: ignore

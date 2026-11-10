@@ -1,0 +1,698 @@
+{
+ "fecha": "2026-11-09",
+ "generado_por": "editado a mano",
+ "escenas": [
+  {
+   "tipo": "intro",
+   "voz": {
+    "texto": "Ayer la Cámara votó el Presupuesto del próximo año y un cambio a la educación pública.",
+    "audio": "episodios/2026-11-09/00-intro.mp3",
+    "duracion_ms": 5448,
+    "palabras": [
+     {
+      "texto": "Ayer",
+      "desde_ms": 100,
+      "hasta_ms": 425
+     },
+     {
+      "texto": "la",
+      "desde_ms": 437,
+      "hasta_ms": 512
+     },
+     {
+      "texto": "Cámara",
+      "desde_ms": 587,
+      "hasta_ms": 875
+     },
+     {
+      "texto": "votó",
+      "desde_ms": 912,
+      "hasta_ms": 1137
+     },
+     {
+      "texto": "el",
+      "desde_ms": 1162,
+      "hasta_ms": 1225
+     },
+     {
+      "texto": "Presupuesto",
+      "desde_ms": 1287,
+      "hasta_ms": 1812
+     },
+     {
+      "texto": "del",
+      "desde_ms": 1837,
+      "hasta_ms": 1937
+     },
+     {
+      "texto": "próximo",
+      "desde_ms": 2012,
+      "hasta_ms": 2425
+     },
+     {
+      "texto": "año",
+      "desde_ms": 2450,
+      "hasta_ms": 2725
+     },
+     {
+      "texto": "y",
+      "desde_ms": 2775,
+      "hasta_ms": 2850
+     },
+     {
+      "texto": "un",
+      "desde_ms": 2875,
+      "hasta_ms": 3050
+     },
+     {
+      "texto": "cambio",
+      "desde_ms": 3062,
+      "hasta_ms": 3362
+     },
+     {
+      "texto": "a",
+      "desde_ms": 3362,
+      "hasta_ms": 3425
+     },
+     {
+      "texto": "la",
+      "desde_ms": 3437,
+      "hasta_ms": 3487
+     },
+     {
+      "texto": "educación",
+      "desde_ms": 3550,
+      "hasta_ms": 4100
+     },
+     {
+      "texto": "pública",
+      "desde_ms": 4112,
+      "hasta_ms": 4587
+     }
+    ],
+    "motor": "edge-tts"
+   }
+  },
+  {
+   "tipo": "noticia",
+   "voz": {
+    "texto": "Partamos por la plata del Estado para 2027. La Cámara aprobó en general el Presupuesto, con 81 votos a favor, 63 en contra y 1 abstención. Lo envió el Presidente de la República hace 40 días.",
+    "audio": "episodios/2026-11-09/01-noticia.mp3",
+    "duracion_ms": 15144,
+    "palabras": [
+     {
+      "texto": "Partamos",
+      "desde_ms": 100,
+      "hasta_ms": 575
+     },
+     {
+      "texto": "por",
+      "desde_ms": 637,
+      "hasta_ms": 750
+     },
+     {
+      "texto": "la",
+      "desde_ms": 775,
+      "hasta_ms": 837
+     },
+     {
+      "texto": "plata",
+      "desde_ms": 925,
+      "hasta_ms": 1150
+     },
+     {
+      "texto": "del",
+      "desde_ms": 1175,
+      "hasta_ms": 1287
+     },
+     {
+      "texto": "Estado",
+      "desde_ms": 1300,
+      "hasta_ms": 1675
+     },
+     {
+      "texto": "para",
+      "desde_ms": 1750,
+      "hasta_ms": 1925
+     },
+     {
+      "texto": "2027",
+      "desde_ms": 1950,
+      "hasta_ms": 3000
+     },
+     {
+      "texto": "La",
+      "desde_ms": 3900,
+      "hasta_ms": 4050
+     },
+     {
+      "texto": "Cámara",
+      "desde_ms": 4125,
+      "hasta_ms": 4425
+     },
+     {
+      "texto": "aprobó",
+      "desde_ms": 4462,
+      "hasta_ms": 4787
+     },
+     {
+      "texto": "en",
+      "desde_ms": 4812,
+      "hasta_ms": 4925
+     },
+     {
+      "texto": "general",
+      "desde_ms": 4925,
+      "hasta_ms": 5362
+     },
+     {
+      "texto": "el",
+      "desde_ms": 5362,
+      "hasta_ms": 5437
+     },
+     {
+      "texto": "Presupuesto",
+      "desde_ms": 5500,
+      "hasta_ms": 6100
+     },
+     {
+      "texto": "con",
+      "desde_ms": 6400,
+      "hasta_ms": 6512
+     },
+     {
+      "texto": "81 votos",
+      "desde_ms": 6525,
+      "hasta_ms": 7475
+     },
+     {
+      "texto": "a",
+      "desde_ms": 7475,
+      "hasta_ms": 7512
+     },
+     {
+      "texto": "favor",
+      "desde_ms": 7537,
+      "hasta_ms": 7862
+     },
+     {
+      "texto": "63",
+      "desde_ms": 8150,
+      "hasta_ms": 8962
+     },
+     {
+      "texto": "en",
+      "desde_ms": 8962,
+      "hasta_ms": 9125
+     },
+     {
+      "texto": "contra",
+      "desde_ms": 9125,
+      "hasta_ms": 9462
+     },
+     {
+      "texto": "y",
+      "desde_ms": 9487,
+      "hasta_ms": 9550
+     },
+     {
+      "texto": "1 abstención",
+      "desde_ms": 9587,
+      "hasta_ms": 10350
+     },
+     {
+      "texto": "Lo",
+      "desde_ms": 11237,
+      "hasta_ms": 11325
+     },
+     {
+      "texto": "envió",
+      "desde_ms": 11337,
+      "hasta_ms": 11612
+     },
+     {
+      "texto": "el",
+      "desde_ms": 11637,
+      "hasta_ms": 11687
+     },
+     {
+      "texto": "Presidente",
+      "desde_ms": 11750,
+      "hasta_ms": 12262
+     },
+     {
+      "texto": "de",
+      "desde_ms": 12287,
+      "hasta_ms": 12362
+     },
+     {
+      "texto": "la",
+      "desde_ms": 12387,
+      "hasta_ms": 12475
+     },
+     {
+      "texto": "República",
+      "desde_ms": 12500,
+      "hasta_ms": 13075
+     },
+     {
+      "texto": "hace",
+      "desde_ms": 13112,
+      "hasta_ms": 13312
+     },
+     {
+      "texto": "40 días",
+      "desde_ms": 13387,
+      "hasta_ms": 14225
+     }
+    ],
+    "motor": "edge-tts"
+   },
+   "titular": "El Presupuesto 2027 pasó su primera votación",
+   "dato": {
+    "id": "C-18702-05",
+    "camara": "camara",
+    "boletin": "18702-05",
+    "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+    "votaciones_del_dia": 2,
+    "aprobadas": 2,
+    "rechazadas": 0,
+    "votacion_principal": {
+     "si": 81,
+     "no": 63,
+     "abstencion": 1,
+     "resultado": "Aprobado",
+     "tipo": "General",
+     "quorum": "Quórum Calificado",
+     "tramite": "Primer Trámite"
+    },
+    "ministerios": [
+     "Ministerio de Hacienda"
+    ],
+    "votaciones_particulares": [],
+    "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05",
+    "etapa": "Discusión Ley de Presupuesto en Cámara de Origen (C.Diputados)",
+    "urgencia_actual": "Sin urgencia",
+    "iniciativa": "mensaje (lo presentó el Presidente de la República)",
+    "camara_origen": "camara",
+    "subetapa": "Cuenta informe Comisión Mixta",
+    "estado": "En tramitación",
+    "fecha_ingreso": "2026-09-30",
+    "dias_desde_ingreso": 40,
+    "autores": null,
+    "materias": null,
+    "urgencias_recibidas": 0,
+    "ultimos_tramites": [
+     {
+      "fecha": "2026-10-20",
+      "camara": "senado",
+      "descripcion": "Informe de comisión Cuarta Subcomisión Mixta de Presupuestos . PARTIDA 31 Gobiernos Regionales"
+     },
+     {
+      "fecha": "2026-10-20",
+      "camara": "senado",
+      "descripcion": "Informe de comisión Tercera Subcomisión Mixta de Presupuestos . PARTIDA 32 Ministerio de Seguridad Pública"
+     },
+     {
+      "fecha": "2026-10-20",
+      "camara": "senado",
+      "descripcion": "Informe de comisión Primera Subcomisión Mixta de Presupuestos. PARTIDA 50 Tesoro Publico"
+     },
+     {
+      "fecha": "2026-11-09",
+      "camara": "senado",
+      "descripcion": "Informe de comisión Especial Mixta de Presupuestos."
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "noticia",
+   "voz": {
+    "texto": "En educación, la Cámara aprobó sin cambios un proyecto que ajusta la segunda etapa de la nueva educación pública y el traspaso a los Servicios Locales. Hubo 8 votaciones y todas se aprobaron. Ahora vuelve al Senado con el aviso.",
+    "audio": "episodios/2026-11-09/02-noticia.mp3",
+    "duracion_ms": 14928,
+    "palabras": [
+     {
+      "texto": "En",
+      "desde_ms": 100,
+      "hasta_ms": 212
+     },
+     {
+      "texto": "educación",
+      "desde_ms": 237,
+      "hasta_ms": 862
+     },
+     {
+      "texto": "la",
+      "desde_ms": 1137,
+      "hasta_ms": 1237
+     },
+     {
+      "texto": "Cámara",
+      "desde_ms": 1312,
+      "hasta_ms": 1600
+     },
+     {
+      "texto": "aprobó",
+      "desde_ms": 1625,
+      "hasta_ms": 1975
+     },
+     {
+      "texto": "sin",
+      "desde_ms": 2000,
+      "hasta_ms": 2225
+     },
+     {
+      "texto": "cambios",
+      "desde_ms": 2237,
+      "hasta_ms": 2575
+     },
+     {
+      "texto": "un",
+      "desde_ms": 2600,
+      "hasta_ms": 2725
+     },
+     {
+      "texto": "proyecto",
+      "desde_ms": 2725,
+      "hasta_ms": 3175
+     },
+     {
+      "texto": "que",
+      "desde_ms": 3237,
+      "hasta_ms": 3275
+     },
+     {
+      "texto": "ajusta",
+      "desde_ms": 3275,
+      "hasta_ms": 3712
+     },
+     {
+      "texto": "la",
+      "desde_ms": 3737,
+      "hasta_ms": 3837
+     },
+     {
+      "texto": "segunda",
+      "desde_ms": 3850,
+      "hasta_ms": 4250
+     },
+     {
+      "texto": "etapa",
+      "desde_ms": 4300,
+      "hasta_ms": 4637
+     },
+     {
+      "texto": "de",
+      "desde_ms": 4650,
+      "hasta_ms": 4737
+     },
+     {
+      "texto": "la",
+      "desde_ms": 4775,
+      "hasta_ms": 4862
+     },
+     {
+      "texto": "nueva",
+      "desde_ms": 4887,
+      "hasta_ms": 5125
+     },
+     {
+      "texto": "educación",
+      "desde_ms": 5187,
+      "hasta_ms": 5725
+     },
+     {
+      "texto": "pública",
+      "desde_ms": 5750,
+      "hasta_ms": 6175
+     },
+     {
+      "texto": "y",
+      "desde_ms": 6200,
+      "hasta_ms": 6287
+     },
+     {
+      "texto": "el",
+      "desde_ms": 6300,
+      "hasta_ms": 6425
+     },
+     {
+      "texto": "traspaso",
+      "desde_ms": 6450,
+      "hasta_ms": 6925
+     },
+     {
+      "texto": "a",
+      "desde_ms": 6937,
+      "hasta_ms": 6975
+     },
+     {
+      "texto": "los",
+      "desde_ms": 7000,
+      "hasta_ms": 7125
+     },
+     {
+      "texto": "Servicios",
+      "desde_ms": 7125,
+      "hasta_ms": 7625
+     },
+     {
+      "texto": "Locales",
+      "desde_ms": 7650,
+      "hasta_ms": 8225
+     },
+     {
+      "texto": "Hubo",
+      "desde_ms": 9112,
+      "hasta_ms": 9350
+     },
+     {
+      "texto": "8 votaciones",
+      "desde_ms": 9375,
+      "hasta_ms": 10312
+     },
+     {
+      "texto": "y",
+      "desde_ms": 10325,
+      "hasta_ms": 10362
+     },
+     {
+      "texto": "todas",
+      "desde_ms": 10462,
+      "hasta_ms": 10712
+     },
+     {
+      "texto": "se",
+      "desde_ms": 10712,
+      "hasta_ms": 10800
+     },
+     {
+      "texto": "aprobaron",
+      "desde_ms": 10800,
+      "hasta_ms": 11350
+     },
+     {
+      "texto": "Ahora",
+      "desde_ms": 12237,
+      "hasta_ms": 12562
+     },
+     {
+      "texto": "vuelve",
+      "desde_ms": 12600,
+      "hasta_ms": 12887
+     },
+     {
+      "texto": "al",
+      "desde_ms": 12900,
+      "hasta_ms": 13000
+     },
+     {
+      "texto": "Senado",
+      "desde_ms": 13012,
+      "hasta_ms": 13375
+     },
+     {
+      "texto": "con",
+      "desde_ms": 13437,
+      "hasta_ms": 13550
+     },
+     {
+      "texto": "el",
+      "desde_ms": 13562,
+      "hasta_ms": 13662
+     },
+     {
+      "texto": "aviso",
+      "desde_ms": 13662,
+      "hasta_ms": 14037
+     }
+    ],
+    "motor": "edge-tts"
+   },
+   "titular": "Educación pública: ajustes al traspaso",
+   "dato": {
+    "id": "C-18551-04",
+    "camara": "camara",
+    "boletin": "18551-04",
+    "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+    "votaciones_del_dia": 8,
+    "aprobadas": 8,
+    "rechazadas": 0,
+    "votacion_principal": {
+     "si": 82,
+     "no": 40,
+     "abstencion": 1,
+     "resultado": "Aprobado",
+     "tipo": "General",
+     "quorum": "Quórum Calificado",
+     "tramite": "Segundo Trámite"
+    },
+    "ministerios": [
+     "Ministerio de Hacienda",
+     "Ministerio de Educación"
+    ],
+    "votaciones_particulares": [
+     {
+      "tema": "Votación particular del numeral 2 del artículo único del proyecto, que consta en la página 5 del comparado, cuya votación separada ha sido solicitada por la diputada Daniela Serrano, el cual requiere del voto favorable de 78 diputadas y diputados, por tratarse",
+      "si": 85,
+      "no": 43,
+      "abstencion": 1,
+      "resultado": "Aprobado"
+     },
+     {
+      "tema": "Votación particular del artículo primero transitorio del proyecto, que consta en la página 12 del comparado, cuya votación separada ha sido solicitada por las diputadas Emilia Schneider y Daniela Serrano, el cual requiere del voto favorable de 78 diputadas y d",
+      "si": 88,
+      "no": 45,
+      "abstencion": 0,
+      "resultado": "Aprobado"
+     },
+     {
+      "tema": "Votación particular del ordinal i contenido en la letra a) del numeral 3 del artículo único del proyecto, que consta en las páginas 6 y 7 del comparado, cuya votación separada ha sido solicitada por las diputadas Emilia Schneider y Daniela Serrano, el cual req",
+      "si": 87,
+      "no": 44,
+      "abstencion": 0,
+      "resultado": "Aprobado"
+     },
+     {
+      "tema": "Votación particular de los literales b), c) y d) del numeral 3 del artículo único del proyecto, que constan en las páginas 9 a 11 del comparado, cuya votación separada ha sido solicitada por la diputada Daniela Serrano, los cuales requieren del voto favorable ",
+      "si": 88,
+      "no": 44,
+      "abstencion": 0,
+      "resultado": "Aprobado"
+     }
+    ],
+    "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04",
+    "iniciativa": "mensaje (lo presentó el Presidente de la República)",
+    "camara_origen": "senado",
+    "etapa": "Segundo trámite constitucional (C.Diputados)",
+    "subetapa": "Oficio aprobación sin modificaciones a Cámara de Origen",
+    "urgencia_actual": "Discusión inmediata",
+    "estado": "En tramitación",
+    "fecha_ingreso": "2026-08-05",
+    "dias_desde_ingreso": 96,
+    "autores": null,
+    "materias": null,
+    "urgencias_recibidas": 12,
+    "ultimos_tramites": [
+     {
+      "fecha": "2026-11-04",
+      "camara": "camara",
+      "descripcion": "Cuenta del Mensaje 444-374 que retira y hace presente la urgencia Discusión inmediata"
+     },
+     {
+      "fecha": "2026-11-04",
+      "camara": "camara",
+      "descripcion": "Cuenta de primer informe de comisión ."
+     },
+     {
+      "fecha": "2026-11-09",
+      "camara": "camara",
+      "descripcion": "Discusión general . Aprobado en general y particular sin modificaciones ."
+     },
+     {
+      "fecha": "2026-11-09",
+      "camara": "camara",
+      "descripcion": "La diputada Emilia Schneider Videla formula reserva de constitucionalidad."
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "voz": {
+    "texto": "Las fuentes oficiales están en la descripción. Mañana te cuento qué viene.",
+    "audio": "episodios/2026-11-09/03-cierre.mp3",
+    "duracion_ms": 5592,
+    "palabras": [
+     {
+      "texto": "Las",
+      "desde_ms": 100,
+      "hasta_ms": 287
+     },
+     {
+      "texto": "fuentes",
+      "desde_ms": 312,
+      "hasta_ms": 662
+     },
+     {
+      "texto": "oficiales",
+      "desde_ms": 662,
+      "hasta_ms": 1237
+     },
+     {
+      "texto": "están",
+      "desde_ms": 1237,
+      "hasta_ms": 1537
+     },
+     {
+      "texto": "en",
+      "desde_ms": 1550,
+      "hasta_ms": 1625
+     },
+     {
+      "texto": "la",
+      "desde_ms": 1650,
+      "hasta_ms": 1725
+     },
+     {
+      "texto": "descripción",
+      "desde_ms": 1750,
+      "hasta_ms": 2425
+     },
+     {
+      "texto": "Mañana",
+      "desde_ms": 3312,
+      "hasta_ms": 3712
+     },
+     {
+      "texto": "te",
+      "desde_ms": 3787,
+      "hasta_ms": 3837
+     },
+     {
+      "texto": "cuento",
+      "desde_ms": 3925,
+      "hasta_ms": 4187
+     },
+     {
+      "texto": "qué",
+      "desde_ms": 4250,
+      "hasta_ms": 4325
+     },
+     {
+      "texto": "viene",
+      "desde_ms": 4350,
+      "hasta_ms": 4675
+     }
+    ],
+    "motor": "edge-tts"
+   }
+  }
+ ],
+ "fuentes": [
+  "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04",
+  "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+ ]
+}

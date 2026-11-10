@@ -16,6 +16,20 @@ Pulso Legislativo lee todos los días lo que pasa en el Senado y en la Cámara d
 | `analisis/` | Métricas y notebooks |
 | `web/` | Sitio público |
 
+## Cómo correrlo
+
+```bash
+python -m venv .venv && .venv/Scripts/activate      # Windows (en Mac/Linux: source .venv/bin/activate)
+pip install -r requirements.txt
+cp .env.example .env                                # completar DATABASE_URL de Supabase
+python -m scrapers.historico --desde 2018            # carga inicial
+python -m scrapers.diario                            # actualización diaria
+```
+
+- Fuentes probadas y sus problemas: [docs/fuentes.md](docs/fuentes.md)
+- Modelo de datos (Supabase): [docs/datos.md](docs/datos.md)
+
 ## Estado
 
-🟡 Fase 0: exploración de fuentes de datos.
+🟢 Fase 0: fuentes probadas.
+🟡 Fase 1: scrapers diario e histórico escritos y esquema creado en Supabase. Falta la primera carga.

@@ -1,0 +1,368 @@
+{
+ "fecha": "2026-11-09",
+ "items": [
+  {
+   "id": "C-18551-04",
+   "camara": "camara",
+   "boletin": "18551-04",
+   "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+   "votaciones_del_dia": 8,
+   "aprobadas": 8,
+   "rechazadas": 0,
+   "votacion_principal": {
+    "si": 82,
+    "no": 40,
+    "abstencion": 1,
+    "resultado": "Aprobado",
+    "tipo": "General",
+    "quorum": "Quórum Calificado",
+    "tramite": "Segundo Trámite",
+    "por_partido": [
+     {
+      "partido": "Partido Republicano",
+      "si": 24,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Independientes",
+      "si": 14,
+      "no": 9,
+      "abstencion": 0
+     },
+     {
+      "partido": "Unión Demócrata Independiente",
+      "si": 12,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Renovación Nacional",
+      "si": 10,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido de la Gente",
+      "si": 9,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Frente Amplio",
+      "si": 0,
+      "no": 7,
+      "abstencion": 1
+     },
+     {
+      "partido": "Partido Nacional Libertario",
+      "si": 7,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Socialista",
+      "si": 0,
+      "no": 7,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Comunista",
+      "si": 0,
+      "no": 6,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Demócrata Cristiano",
+      "si": 1,
+      "no": 5,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Liberal de Chile",
+      "si": 0,
+      "no": 2,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Cristiano de Chile",
+      "si": 2,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Por la Democracia",
+      "si": 0,
+      "no": 2,
+      "abstencion": 0
+     },
+     {
+      "partido": "Evolución Política",
+      "si": 2,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Radical de Chile",
+      "si": 0,
+      "no": 1,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Demócratas Chile",
+      "si": 1,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Acción Humanista",
+      "si": 0,
+      "no": 1,
+      "abstencion": 0
+     },
+     {
+      "partido": "Federación Regionalista Verde Social",
+      "si": 0,
+      "no": 0,
+      "abstencion": 0
+     }
+    ]
+   },
+   "ministerios": [
+    "Ministerio de Hacienda",
+    "Ministerio de Educación"
+   ],
+   "votaciones_particulares": [
+    {
+     "tema": "Votación particular del numeral 2 del artículo único del proyecto, que consta en la página 5 del comparado, cuya votación separada ha sido solicitada por la diputada Daniela Serrano, el cual requiere del voto favorable de 78 diputadas y diputados, por tratarse",
+     "si": 85,
+     "no": 43,
+     "abstencion": 1,
+     "resultado": "Aprobado"
+    },
+    {
+     "tema": "Votación particular del artículo primero transitorio del proyecto, que consta en la página 12 del comparado, cuya votación separada ha sido solicitada por las diputadas Emilia Schneider y Daniela Serrano, el cual requiere del voto favorable de 78 diputadas y d",
+     "si": 88,
+     "no": 45,
+     "abstencion": 0,
+     "resultado": "Aprobado"
+    },
+    {
+     "tema": "Votación particular del ordinal i contenido en la letra a) del numeral 3 del artículo único del proyecto, que consta en las páginas 6 y 7 del comparado, cuya votación separada ha sido solicitada por las diputadas Emilia Schneider y Daniela Serrano, el cual req",
+     "si": 87,
+     "no": 44,
+     "abstencion": 0,
+     "resultado": "Aprobado"
+    },
+    {
+     "tema": "Votación particular de los literales b), c) y d) del numeral 3 del artículo único del proyecto, que constan en las páginas 9 a 11 del comparado, cuya votación separada ha sido solicitada por la diputada Daniela Serrano, los cuales requieren del voto favorable ",
+     "si": 88,
+     "no": 44,
+     "abstencion": 0,
+     "resultado": "Aprobado"
+    }
+   ],
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04",
+   "iniciativa": "mensaje (lo presentó el Presidente de la República)",
+   "camara_origen": "senado",
+   "etapa": "Segundo trámite constitucional (C.Diputados)",
+   "subetapa": "Oficio aprobación sin modificaciones a Cámara de Origen",
+   "urgencia_actual": "Discusión inmediata",
+   "estado": "En tramitación",
+   "fecha_ingreso": "2026-08-05",
+   "dias_desde_ingreso": 96,
+   "autores": null,
+   "materias": null,
+   "urgencias_recibidas": 12,
+   "ultimos_tramites": [
+    {
+     "fecha": "2026-11-04",
+     "camara": "camara",
+     "descripcion": "Cuenta del Mensaje 444-374 que retira y hace presente la urgencia Discusión inmediata"
+    },
+    {
+     "fecha": "2026-11-04",
+     "camara": "camara",
+     "descripcion": "Cuenta de primer informe de comisión ."
+    },
+    {
+     "fecha": "2026-11-09",
+     "camara": "camara",
+     "descripcion": "Discusión general . Aprobado en general y particular sin modificaciones ."
+    },
+    {
+     "fecha": "2026-11-09",
+     "camara": "camara",
+     "descripcion": "La diputada Emilia Schneider Videla formula reserva de constitucionalidad."
+    }
+   ]
+  },
+  {
+   "id": "C-18702-05",
+   "camara": "camara",
+   "boletin": "18702-05",
+   "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+   "votaciones_del_dia": 2,
+   "aprobadas": 2,
+   "rechazadas": 0,
+   "votacion_principal": {
+    "si": 81,
+    "no": 63,
+    "abstencion": 1,
+    "resultado": "Aprobado",
+    "tipo": "General",
+    "quorum": "Quórum Calificado",
+    "tramite": "Primer Trámite",
+    "por_partido": [
+     {
+      "partido": "Independientes",
+      "si": 11,
+      "no": 15,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Republicano",
+      "si": 26,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Unión Demócrata Independiente",
+      "si": 13,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Frente Amplio",
+      "si": 0,
+      "no": 13,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido de la Gente",
+      "si": 9,
+      "no": 3,
+      "abstencion": 0
+     },
+     {
+      "partido": "Renovación Nacional",
+      "si": 10,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Socialista",
+      "si": 0,
+      "no": 10,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Nacional Libertario",
+      "si": 7,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Comunista",
+      "si": 0,
+      "no": 7,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Demócrata Cristiano",
+      "si": 0,
+      "no": 7,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Por la Democracia",
+      "si": 0,
+      "no": 4,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Liberal de Chile",
+      "si": 0,
+      "no": 2,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Cristiano de Chile",
+      "si": 2,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Evolución Política",
+      "si": 2,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Federación Regionalista Verde Social",
+      "si": 0,
+      "no": 0,
+      "abstencion": 1
+     },
+     {
+      "partido": "Partido Radical de Chile",
+      "si": 0,
+      "no": 1,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Demócratas Chile",
+      "si": 1,
+      "no": 0,
+      "abstencion": 0
+     },
+     {
+      "partido": "Partido Acción Humanista",
+      "si": 0,
+      "no": 1,
+      "abstencion": 0
+     }
+    ]
+   },
+   "ministerios": [
+    "Ministerio de Hacienda"
+   ],
+   "votaciones_particulares": [],
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05",
+   "etapa": "Discusión Ley de Presupuesto en Cámara de Origen (C.Diputados)",
+   "urgencia_actual": "Sin urgencia",
+   "iniciativa": "mensaje (lo presentó el Presidente de la República)",
+   "camara_origen": "camara",
+   "subetapa": "Cuenta informe Comisión Mixta",
+   "estado": "En tramitación",
+   "fecha_ingreso": "2026-09-30",
+   "dias_desde_ingreso": 40,
+   "autores": null,
+   "materias": null,
+   "urgencias_recibidas": 0,
+   "ultimos_tramites": [
+    {
+     "fecha": "2026-10-20",
+     "camara": "senado",
+     "descripcion": "Informe de comisión Cuarta Subcomisión Mixta de Presupuestos . PARTIDA 31 Gobiernos Regionales"
+    },
+    {
+     "fecha": "2026-10-20",
+     "camara": "senado",
+     "descripcion": "Informe de comisión Tercera Subcomisión Mixta de Presupuestos . PARTIDA 32 Ministerio de Seguridad Pública"
+    },
+    {
+     "fecha": "2026-10-20",
+     "camara": "senado",
+     "descripcion": "Informe de comisión Primera Subcomisión Mixta de Presupuestos. PARTIDA 50 Tesoro Publico"
+    },
+    {
+     "fecha": "2026-11-09",
+     "camara": "senado",
+     "descripcion": "Informe de comisión Especial Mixta de Presupuestos."
+    }
+   ]
+  }
+ ],
+ "total_hechos": 2
+}

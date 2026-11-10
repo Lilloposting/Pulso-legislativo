@@ -16,3 +16,9 @@ data/raw/*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Video
+video/node_modules/
+video/out/
+video/public/episodios/*
+!video/public/episodios/2026-11-09/
