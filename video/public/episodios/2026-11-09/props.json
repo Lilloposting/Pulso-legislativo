@@ -5,270 +5,1279 @@
   {
    "tipo": "intro",
    "voz": {
-    "texto": "Ayer la Cámara votó el Presupuesto del próximo año y un cambio a la educación pública.",
+    "texto": "Hoy los diputados trabajaron 5 horas. ¿Hicieron algo por ti? Veamos.",
     "audio": "episodios/2026-11-09/00-intro.mp3",
-    "duracion_ms": 5448,
+    "duracion_ms": 6768,
     "palabras": [
      {
-      "texto": "Ayer",
+      "texto": "Hoy",
       "desde_ms": 100,
-      "hasta_ms": 425
+      "hasta_ms": 237,
+      "censurada": false
      },
      {
-      "texto": "la",
-      "desde_ms": 437,
-      "hasta_ms": 512
+      "texto": "los",
+      "desde_ms": 262,
+      "hasta_ms": 387,
+      "censurada": false
      },
      {
-      "texto": "Cámara",
-      "desde_ms": 587,
-      "hasta_ms": 875
+      "texto": "diputados",
+      "desde_ms": 400,
+      "hasta_ms": 950,
+      "censurada": false
      },
      {
-      "texto": "votó",
-      "desde_ms": 912,
-      "hasta_ms": 1137
+      "texto": "trabajaron",
+      "desde_ms": 1000,
+      "hasta_ms": 1537,
+      "censurada": false
      },
      {
-      "texto": "el",
-      "desde_ms": 1162,
-      "hasta_ms": 1225
+      "texto": "5 horas",
+      "desde_ms": 1562,
+      "hasta_ms": 2362,
+      "censurada": false
      },
      {
-      "texto": "Presupuesto",
-      "desde_ms": 1287,
-      "hasta_ms": 1812
+      "texto": "Hicieron",
+      "desde_ms": 3250,
+      "hasta_ms": 3700,
+      "censurada": false
      },
      {
-      "texto": "del",
-      "desde_ms": 1837,
-      "hasta_ms": 1937
+      "texto": "algo",
+      "desde_ms": 3712,
+      "hasta_ms": 3962,
+      "censurada": false
      },
      {
-      "texto": "próximo",
-      "desde_ms": 2012,
-      "hasta_ms": 2425
+      "texto": "por",
+      "desde_ms": 4037,
+      "hasta_ms": 4150,
+      "censurada": false
      },
      {
-      "texto": "año",
-      "desde_ms": 2450,
-      "hasta_ms": 2725
+      "texto": "ti",
+      "desde_ms": 4250,
+      "hasta_ms": 4362,
+      "censurada": false
      },
      {
-      "texto": "y",
-      "desde_ms": 2775,
-      "hasta_ms": 2850
-     },
-     {
-      "texto": "un",
-      "desde_ms": 2875,
-      "hasta_ms": 3050
-     },
-     {
-      "texto": "cambio",
-      "desde_ms": 3062,
-      "hasta_ms": 3362
-     },
-     {
-      "texto": "a",
-      "desde_ms": 3362,
-      "hasta_ms": 3425
-     },
-     {
-      "texto": "la",
-      "desde_ms": 3437,
-      "hasta_ms": 3487
-     },
-     {
-      "texto": "educación",
-      "desde_ms": 3550,
-      "hasta_ms": 4100
-     },
-     {
-      "texto": "pública",
-      "desde_ms": 4112,
-      "hasta_ms": 4587
+      "texto": "Veamos",
+      "desde_ms": 5262,
+      "hasta_ms": 5862,
+      "censurada": false
      }
     ],
     "motor": "edge-tts"
    }
   },
   {
-   "tipo": "noticia",
+   "tipo": "jornada",
    "voz": {
-    "texto": "Partamos por la plata del Estado para 2027. La Cámara aprobó en general el Presupuesto, con 81 votos a favor, 63 en contra y 1 abstención. Lo envió el Presidente de la República hace 40 días.",
-    "audio": "episodios/2026-11-09/01-noticia.mp3",
-    "duracion_ms": 15144,
+    "texto": "Estuvieron 5 horas y 5 minutos en la Sala y votaron 2 proyectos. Todos estos weones votaron. Y estos 8 ctm no votaron ni una vez. No sé si no fueron o se pajearon en la sala.",
+    "audio": "episodios/2026-11-09/01-jornada.mp3",
+    "duracion_ms": 13968,
     "palabras": [
      {
-      "texto": "Partamos",
+      "texto": "Estuvieron",
       "desde_ms": 100,
-      "hasta_ms": 575
+      "hasta_ms": 637,
+      "censurada": false
      },
      {
-      "texto": "por",
-      "desde_ms": 637,
-      "hasta_ms": 750
-     },
-     {
-      "texto": "la",
-      "desde_ms": 775,
-      "hasta_ms": 837
-     },
-     {
-      "texto": "plata",
-      "desde_ms": 925,
-      "hasta_ms": 1150
-     },
-     {
-      "texto": "del",
-      "desde_ms": 1175,
-      "hasta_ms": 1287
-     },
-     {
-      "texto": "Estado",
-      "desde_ms": 1300,
-      "hasta_ms": 1675
-     },
-     {
-      "texto": "para",
-      "desde_ms": 1750,
-      "hasta_ms": 1925
-     },
-     {
-      "texto": "2027",
-      "desde_ms": 1950,
-      "hasta_ms": 3000
-     },
-     {
-      "texto": "La",
-      "desde_ms": 3900,
-      "hasta_ms": 4050
-     },
-     {
-      "texto": "Cámara",
-      "desde_ms": 4125,
-      "hasta_ms": 4425
-     },
-     {
-      "texto": "aprobó",
-      "desde_ms": 4462,
-      "hasta_ms": 4787
-     },
-     {
-      "texto": "en",
-      "desde_ms": 4812,
-      "hasta_ms": 4925
-     },
-     {
-      "texto": "general",
-      "desde_ms": 4925,
-      "hasta_ms": 5362
-     },
-     {
-      "texto": "el",
-      "desde_ms": 5362,
-      "hasta_ms": 5437
-     },
-     {
-      "texto": "Presupuesto",
-      "desde_ms": 5500,
-      "hasta_ms": 6100
-     },
-     {
-      "texto": "con",
-      "desde_ms": 6400,
-      "hasta_ms": 6512
-     },
-     {
-      "texto": "81 votos",
-      "desde_ms": 6525,
-      "hasta_ms": 7475
-     },
-     {
-      "texto": "a",
-      "desde_ms": 7475,
-      "hasta_ms": 7512
-     },
-     {
-      "texto": "favor",
-      "desde_ms": 7537,
-      "hasta_ms": 7862
-     },
-     {
-      "texto": "63",
-      "desde_ms": 8150,
-      "hasta_ms": 8962
-     },
-     {
-      "texto": "en",
-      "desde_ms": 8962,
-      "hasta_ms": 9125
-     },
-     {
-      "texto": "contra",
-      "desde_ms": 9125,
-      "hasta_ms": 9462
+      "texto": "5 horas",
+      "desde_ms": 662,
+      "hasta_ms": 1312,
+      "censurada": false
      },
      {
       "texto": "y",
-      "desde_ms": 9487,
-      "hasta_ms": 9550
+      "desde_ms": 1337,
+      "hasta_ms": 1362,
+      "censurada": false
      },
      {
-      "texto": "1 abstención",
-      "desde_ms": 9587,
-      "hasta_ms": 10350
+      "texto": "5 minutos",
+      "desde_ms": 1400,
+      "hasta_ms": 2212,
+      "censurada": false
      },
      {
-      "texto": "Lo",
-      "desde_ms": 11237,
-      "hasta_ms": 11325
-     },
-     {
-      "texto": "envió",
-      "desde_ms": 11337,
-      "hasta_ms": 11612
-     },
-     {
-      "texto": "el",
-      "desde_ms": 11637,
-      "hasta_ms": 11687
-     },
-     {
-      "texto": "Presidente",
-      "desde_ms": 11750,
-      "hasta_ms": 12262
-     },
-     {
-      "texto": "de",
-      "desde_ms": 12287,
-      "hasta_ms": 12362
+      "texto": "en",
+      "desde_ms": 2212,
+      "hasta_ms": 2262,
+      "censurada": false
      },
      {
       "texto": "la",
-      "desde_ms": 12387,
-      "hasta_ms": 12475
+      "desde_ms": 2287,
+      "hasta_ms": 2400,
+      "censurada": false
      },
      {
-      "texto": "República",
+      "texto": "Sala",
+      "desde_ms": 2412,
+      "hasta_ms": 2725,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 2775,
+      "hasta_ms": 2825,
+      "censurada": false
+     },
+     {
+      "texto": "votaron",
+      "desde_ms": 2862,
+      "hasta_ms": 3287,
+      "censurada": false
+     },
+     {
+      "texto": "2 proyectos",
+      "desde_ms": 3350,
+      "hasta_ms": 4175,
+      "censurada": false
+     },
+     {
+      "texto": "Todos",
+      "desde_ms": 5075,
+      "hasta_ms": 5412,
+      "censurada": false
+     },
+     {
+      "texto": "estos",
+      "desde_ms": 5412,
+      "hasta_ms": 5700,
+      "censurada": false
+     },
+     {
+      "texto": "weones",
+      "desde_ms": 5737,
+      "hasta_ms": 6075,
+      "censurada": false
+     },
+     {
+      "texto": "votaron",
+      "desde_ms": 6112,
+      "hasta_ms": 6587,
+      "censurada": false
+     },
+     {
+      "texto": "Y",
+      "desde_ms": 7475,
+      "hasta_ms": 7575,
+      "censurada": false
+     },
+     {
+      "texto": "estos",
+      "desde_ms": 7600,
+      "hasta_ms": 7950,
+      "censurada": false
+     },
+     {
+      "texto": "8 ctm",
+      "desde_ms": 7950,
+      "hasta_ms": 8725,
+      "censurada": true
+     },
+     {
+      "texto": "no",
+      "desde_ms": 8762,
+      "hasta_ms": 8875,
+      "censurada": false
+     },
+     {
+      "texto": "votaron",
+      "desde_ms": 8900,
+      "hasta_ms": 9300,
+      "censurada": false
+     },
+     {
+      "texto": "ni",
+      "desde_ms": 9312,
+      "hasta_ms": 9412,
+      "censurada": false
+     },
+     {
+      "texto": "una",
+      "desde_ms": 9462,
+      "hasta_ms": 9637,
+      "censurada": false
+     },
+     {
+      "texto": "vez",
+      "desde_ms": 9662,
+      "hasta_ms": 9987,
+      "censurada": false
+     },
+     {
+      "texto": "No",
+      "desde_ms": 10887,
+      "hasta_ms": 11075,
+      "censurada": false
+     },
+     {
+      "texto": "sé",
+      "desde_ms": 11100,
+      "hasta_ms": 11212,
+      "censurada": false
+     },
+     {
+      "texto": "si",
+      "desde_ms": 11237,
+      "hasta_ms": 11362,
+      "censurada": false
+     },
+     {
+      "texto": "no",
+      "desde_ms": 11387,
+      "hasta_ms": 11500,
+      "censurada": false
+     },
+     {
+      "texto": "fueron",
+      "desde_ms": 11537,
+      "hasta_ms": 11812,
+      "censurada": false
+     },
+     {
+      "texto": "o",
+      "desde_ms": 11825,
+      "hasta_ms": 11887,
+      "censurada": false
+     },
+     {
+      "texto": "se",
+      "desde_ms": 11900,
+      "hasta_ms": 12000,
+      "censurada": false
+     },
+     {
+      "texto": "pajearon",
+      "desde_ms": 12075,
+      "hasta_ms": 12487,
+      "censurada": true
+     },
+     {
+      "texto": "en",
       "desde_ms": 12500,
-      "hasta_ms": 13075
+      "hasta_ms": 12575,
+      "censurada": false
      },
      {
-      "texto": "hace",
-      "desde_ms": 13112,
-      "hasta_ms": 13312
+      "texto": "la",
+      "desde_ms": 12600,
+      "hasta_ms": 12700,
+      "censurada": false
      },
      {
-      "texto": "40 días",
-      "desde_ms": 13387,
-      "hasta_ms": 14225
+      "texto": "sala",
+      "desde_ms": 12712,
+      "hasta_ms": 13050,
+      "censurada": false
      }
     ],
     "motor": "edge-tts"
    },
-   "titular": "El Presupuesto 2027 pasó su primera votación",
+   "jornada": {
+    "camara": {
+     "lista_votaron": [
+      {
+       "nombre": "Agustín Romero Leiva",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Alejandra Valdebenito Torres",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Alejandro Bernales Maldonado",
+       "partido": "Partido Liberal de Chile"
+      },
+      {
+       "nombre": "Alejandro Riquelme Ducci",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Alex Nahuelquin Nahuelquin",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Ana María Gazmuri Vieira",
+       "partido": "Partido Acción Humanista"
+      },
+      {
+       "nombre": "Andrea Macías Palma",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Andrea Parra Sauterel",
+       "partido": "Partido Por la Democracia"
+      },
+      {
+       "nombre": "Benjamín Lorca Inzunza",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Benjamín Moreno Bascur",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Bernardo Salinas Maya",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Carlo Arqueros Pizarro",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Carlos Bianchi Chelech",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Carlos Carvajal Gallardo",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Carlos Chandía Alarcón",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Carlos Cuadrado Prats",
+       "partido": "Partido Por la Democracia"
+      },
+      {
+       "nombre": "Carolina Cucumides Calderón",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Carolina Tello Rojas",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Catalina Del Real Mihovilovic",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Chiara Barchiesi Chávez",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Claudia Mora Vega",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Claudia Reyes Larenas",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Constanza Hube Portus",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Constanza Schonhaut Soto",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Consuelo Veloso Ávila",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Cristian Contreras Radovic",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Cristian Mella Andaur",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Cristian Menchaca Pinochet",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Cristian Neira Martínez",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Cristián Araya Lerdo de Tejada",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Cristián Tapia Ramos",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Cristóbal Martínez Ramírez",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Cristóbal Urruticoechea Ríos",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "César Valenzuela Maass",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Daniel Bustos Leal",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Daniel Lilayu Vivanco",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Daniel Manouchehri Lobos",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Daniel Valenzuela Salazar",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Daniela Serrano Salazar",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Diego Schalper Sepúlveda",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Diego Vergara Rodríguez",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Eduardo Cretton Rebolledo",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Eduardo Durán Salinas",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Eileen Urqueta Rojas",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Emilia Nuyado Ancapichun",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Emilia Schneider Videla",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Enrique Bassaletti Riess",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Erich Grohs Marín",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Fabián Ossandón Briceño",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Felipe Camaño Cárdenas",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Felipe Ross Correa",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Fernando Ugarte Tejeda",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Fernando Zamorano Peralta",
+       "partido": "Partido Por la Democracia"
+      },
+      {
+       "nombre": "Flor Contreras Vivallo",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Flor Weisse Novoa",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Francesca Muñoz González",
+       "partido": "Partido Cristiano de Chile"
+      },
+      {
+       "nombre": "Francisco Crisóstomo Llanos",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Francisco Orrego Gutiérrez",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Félix Bugueño Sotelo",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Gael Yeomans Araya",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Germán Verdugo Soto",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Gloria Naveillan Arriagada",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Gonzalo Winter Etcheberry",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Guillermo Ramírez Diez",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Guillermo Valdés Carmona",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Gustavo Gatica Villarroel",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Hans Marowski Cuevas",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Hotuiti Teao Drago",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Héctor Barría Angulo",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Héctor Ulloa Aguilera",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Ignacio Achurra Díaz",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Ignacio Urcullú Clèment-Lund",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Irací Hassler Jacob",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Jaime Araya Guerrero",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Jaime Bassa Mercado",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Jaime Coloma Álamos",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Jaime Mulet Martínez",
+       "partido": "Federación Regionalista Verde Social"
+      },
+      {
+       "nombre": "Javier Muñoz Riquelme",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Javier Olivares Avendaño",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Javiera Rodríguez Pascual",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Joanna Pérez Olea",
+       "partido": "Partido Demócratas Chile"
+      },
+      {
+       "nombre": "Jorge Alessandri Vergara",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Jorge Brito Hasbún",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Jorge Díaz Ibarra",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Jorge Guzmán Zepeda",
+       "partido": "Evolución Política"
+      },
+      {
+       "nombre": "José Antonio Kast Adriasola",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "José Antonio Rivas Villalobos",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "José Carlos Meza Pereira",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "José Montalva Feuerhake",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Juan Carlos Beltrán Silva",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Juan Irarrázaval Rossel",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Juan Marcelo Valenzuela Henríquez",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Juan Santana Castillo",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Lilian Betancurt Delgado",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Lorena Fries Monleón",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Lorena Pizarro Sierra",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Luis Alberto Cuello Peña y Lillo",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Luis Malla Valenzuela",
+       "partido": "Partido Liberal de Chile"
+      },
+      {
+       "nombre": "Luis Pardo Sáinz",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Luis Sánchez Ossa",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Macarena Santelices Cañas",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Marcela Hernando Pérez",
+       "partido": "Partido Radical de Chile"
+      },
+      {
+       "nombre": "Marco Antonio Sulantay Olivares",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Marcos Barraza Gómez",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Marcos Ilabaca Cerda",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Mario Olavarría Rodríguez",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Marisela Santibáñez Novoa",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Matías Fernández Hartwig",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Mauro González Villarroel",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Natalia Romero Talguia",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Nathalie Castillo Rojas",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Nelson Venegas Salazar",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Omar Sabat Guzmán",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Patricio Briones Moller",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Patricio Pinilla Valencia",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Paula Olmos Contreras",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Paulina Muñoz Minte",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Paz Charpentier Rajcevich",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Pier Karlezi Hazleby",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Priscilla Castillo Gerli",
+       "partido": "Partido Demócrata Cristiano"
+      },
+      {
+       "nombre": "Raúl Leiva Carvajal",
+       "partido": "Partido Socialista"
+      },
+      {
+       "nombre": "Raúl Soto Mardones",
+       "partido": "Partido Por la Democracia"
+      },
+      {
+       "nombre": "René Alinco Bustos",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "René Manuel García García",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Ricardo Neumann Bertín",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Roberto Arroyo Muñoz",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Roberto Celedón Fernández",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Rodrigo Ramírez Parra",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Sara Concha Smith",
+       "partido": "Partido Cristiano de Chile"
+      },
+      {
+       "nombre": "Sebastián Cristoffanini Jaraquemada",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Sebastián Videla Castillo",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Sebastián Zamora Soto",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Sergio Bobadilla Muñoz",
+       "partido": "Unión Demócrata Independiente"
+      },
+      {
+       "nombre": "Sofía González Cortés",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Stephan Schubert Rubio",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Stephanie Jéldrez Ortiz",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Tamara Ramírez Ramírez",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Tatiana Urrutia Herrera",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Tomás Kast Sommerhoff",
+       "partido": "Evolución Política"
+      },
+      {
+       "nombre": "Valentina Becerra Peña",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Valentina Cáceres Monsálvez",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Ximena Naranjo Pinto",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "Ximena Ossandón Irarrázabal",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Zandra Parisi Fernández",
+       "partido": "Partido de la Gente"
+      },
+      {
+       "nombre": "Álvaro Carter Fernández",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Álvaro Jofré Cáceres",
+       "partido": "Partido Nacional Libertario"
+      },
+      {
+       "nombre": "Álvaro Ortiz Vera",
+       "partido": "Partido Demócrata Cristiano"
+      }
+     ],
+     "lista_no_votaron": [
+      {
+       "nombre": "Andrés Celis Montt",
+       "partido": "Renovación Nacional"
+      },
+      {
+       "nombre": "Boris Barrera Moreno",
+       "partido": "Partido Comunista"
+      },
+      {
+       "nombre": "Coca Ericka Ñanco Vásquez",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Javiera Morales Alvarado",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Leandro Kunstmann Collado",
+       "partido": "Partido Republicano"
+      },
+      {
+       "nombre": "Marlene Pérez Cartes",
+       "partido": "Independientes"
+      },
+      {
+       "nombre": "María Francisca Bello Campos",
+       "partido": "Frente Amplio"
+      },
+      {
+       "nombre": "Pamela Jiles Moreno",
+       "partido": "Partido de la Gente"
+      }
+     ],
+     "sesiones": [
+      {
+       "numero": 89,
+       "tipo": "Ordinaria",
+       "inicio": "14:33",
+       "termino": "18:14"
+      },
+      {
+       "numero": 90,
+       "tipo": "Especial",
+       "inicio": "18:30",
+       "termino": "19:55"
+      }
+     ],
+     "horas_en_sala": 5,
+     "minutos_en_sala_resto": 5,
+     "minutos_en_sala_total": 305,
+     "votaciones": 15,
+     "proyectos_votados": 2,
+     "diputados_que_votaron": 147,
+     "total_diputados": 155,
+     "diputados_que_no_votaron_nunca": 8
+    },
+    "senado": {
+     "votaciones": 0,
+     "proyectos_votados": 0
+    },
+    "leyes_publicadas": 0
+   }
+  },
+  {
+   "tipo": "noticia",
+   "voz": {
+    "texto": "¿Qué hicieron hoy por Chile? Aprobaron en general el Presupuesto 2027, o sea, en qué se va a gastar la plata de todos el próximo año. Quedó 81 a favor y 63 en contra: Republicanos, UDI y RN a favor; Frente Amplio, PS y PC en contra. ¿Te cambia algo hoy? Todavía no, sigue su trámite.",
+    "audio": "episodios/2026-11-09/02-noticia.mp3",
+    "duracion_ms": 23832,
+    "palabras": [
+     {
+      "texto": "Qué",
+      "desde_ms": 100,
+      "hasta_ms": 212,
+      "censurada": false
+     },
+     {
+      "texto": "hicieron",
+      "desde_ms": 225,
+      "hasta_ms": 662,
+      "censurada": false
+     },
+     {
+      "texto": "hoy",
+      "desde_ms": 675,
+      "hasta_ms": 812,
+      "censurada": false
+     },
+     {
+      "texto": "por",
+      "desde_ms": 900,
+      "hasta_ms": 1012,
+      "censurada": false
+     },
+     {
+      "texto": "Chile",
+      "desde_ms": 1100,
+      "hasta_ms": 1400,
+      "censurada": false
+     },
+     {
+      "texto": "Aprobaron",
+      "desde_ms": 2300,
+      "hasta_ms": 2787,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 2800,
+      "hasta_ms": 2912,
+      "censurada": false
+     },
+     {
+      "texto": "general",
+      "desde_ms": 2912,
+      "hasta_ms": 3325,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 3325,
+      "hasta_ms": 3400,
+      "censurada": false
+     },
+     {
+      "texto": "Presupuesto",
+      "desde_ms": 3462,
+      "hasta_ms": 4012,
+      "censurada": false
+     },
+     {
+      "texto": "2027",
+      "desde_ms": 4037,
+      "hasta_ms": 5075,
+      "censurada": false
+     },
+     {
+      "texto": "o",
+      "desde_ms": 5362,
+      "hasta_ms": 5437,
+      "censurada": false
+     },
+     {
+      "texto": "sea",
+      "desde_ms": 5475,
+      "hasta_ms": 5837,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 6112,
+      "hasta_ms": 6275,
+      "censurada": false
+     },
+     {
+      "texto": "qué",
+      "desde_ms": 6287,
+      "hasta_ms": 6362,
+      "censurada": false
+     },
+     {
+      "texto": "se",
+      "desde_ms": 6387,
+      "hasta_ms": 6512,
+      "censurada": false
+     },
+     {
+      "texto": "va",
+      "desde_ms": 6550,
+      "hasta_ms": 6687,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 6712,
+      "hasta_ms": 6725,
+      "censurada": false
+     },
+     {
+      "texto": "gastar",
+      "desde_ms": 6775,
+      "hasta_ms": 7162,
+      "censurada": false
+     },
+     {
+      "texto": "la",
+      "desde_ms": 7175,
+      "hasta_ms": 7250,
+      "censurada": false
+     },
+     {
+      "texto": "plata",
+      "desde_ms": 7350,
+      "hasta_ms": 7612,
+      "censurada": false
+     },
+     {
+      "texto": "de",
+      "desde_ms": 7637,
+      "hasta_ms": 7750,
+      "censurada": false
+     },
+     {
+      "texto": "todos",
+      "desde_ms": 7875,
+      "hasta_ms": 8212,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 8212,
+      "hasta_ms": 8287,
+      "censurada": false
+     },
+     {
+      "texto": "próximo",
+      "desde_ms": 8375,
+      "hasta_ms": 8800,
+      "censurada": false
+     },
+     {
+      "texto": "año",
+      "desde_ms": 8837,
+      "hasta_ms": 9112,
+      "censurada": false
+     },
+     {
+      "texto": "Quedó",
+      "desde_ms": 10012,
+      "hasta_ms": 10262,
+      "censurada": false
+     },
+     {
+      "texto": "81 a",
+      "desde_ms": 10275,
+      "hasta_ms": 10937,
+      "censurada": false
+     },
+     {
+      "texto": "favor",
+      "desde_ms": 10962,
+      "hasta_ms": 11287,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 11300,
+      "hasta_ms": 11337,
+      "censurada": false
+     },
+     {
+      "texto": "63",
+      "desde_ms": 11375,
+      "hasta_ms": 12150,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 12150,
+      "hasta_ms": 12300,
+      "censurada": false
+     },
+     {
+      "texto": "contra",
+      "desde_ms": 12300,
+      "hasta_ms": 12712,
+      "censurada": false
+     },
+     {
+      "texto": "Republicanos",
+      "desde_ms": 12950,
+      "hasta_ms": 13775,
+      "censurada": false
+     },
+     {
+      "texto": "UDI",
+      "desde_ms": 14062,
+      "hasta_ms": 14287,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 14337,
+      "hasta_ms": 14437,
+      "censurada": false
+     },
+     {
+      "texto": "RN",
+      "desde_ms": 14450,
+      "hasta_ms": 14912,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 14925,
+      "hasta_ms": 14975,
+      "censurada": false
+     },
+     {
+      "texto": "favor",
+      "desde_ms": 15000,
+      "hasta_ms": 15362,
+      "censurada": false
+     },
+     {
+      "texto": "Frente",
+      "desde_ms": 15650,
+      "hasta_ms": 15987,
+      "censurada": false
+     },
+     {
+      "texto": "Amplio",
+      "desde_ms": 16025,
+      "hasta_ms": 16425,
+      "censurada": false
+     },
+     {
+      "texto": "PS",
+      "desde_ms": 16725,
+      "hasta_ms": 17175,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 17212,
+      "hasta_ms": 17275,
+      "censurada": false
+     },
+     {
+      "texto": "PC",
+      "desde_ms": 17375,
+      "hasta_ms": 17662,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 17687,
+      "hasta_ms": 17825,
+      "censurada": false
+     },
+     {
+      "texto": "contra",
+      "desde_ms": 17825,
+      "hasta_ms": 18212,
+      "censurada": false
+     },
+     {
+      "texto": "Te",
+      "desde_ms": 19100,
+      "hasta_ms": 19187,
+      "censurada": false
+     },
+     {
+      "texto": "cambia",
+      "desde_ms": 19262,
+      "hasta_ms": 19575,
+      "censurada": false
+     },
+     {
+      "texto": "algo",
+      "desde_ms": 19625,
+      "hasta_ms": 19900,
+      "censurada": false
+     },
+     {
+      "texto": "hoy",
+      "desde_ms": 19937,
+      "hasta_ms": 20137,
+      "censurada": false
+     },
+     {
+      "texto": "Todavía",
+      "desde_ms": 21037,
+      "hasta_ms": 21500,
+      "censurada": false
+     },
+     {
+      "texto": "no",
+      "desde_ms": 21537,
+      "hasta_ms": 21725,
+      "censurada": false
+     },
+     {
+      "texto": "sigue",
+      "desde_ms": 22000,
+      "hasta_ms": 22300,
+      "censurada": false
+     },
+     {
+      "texto": "su",
+      "desde_ms": 22325,
+      "hasta_ms": 22437,
+      "censurada": false
+     },
+     {
+      "texto": "trámite",
+      "desde_ms": 22512,
+      "hasta_ms": 22912,
+      "censurada": false
+     }
+    ],
+    "motor": "edge-tts"
+   },
+   "titular": "Presupuesto 2027: pasó la primera votación",
    "dato": {
     "id": "C-18702-05",
     "camara": "camara",
@@ -284,7 +1293,143 @@
      "resultado": "Aprobado",
      "tipo": "General",
      "quorum": "Quórum Calificado",
-     "tramite": "Primer Trámite"
+     "tramite": "Primer Trámite",
+     "por_partido": [
+      {
+       "partido": "Independientes",
+       "si": 11,
+       "no": 15,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Republicano",
+       "si": 26,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Unión Demócrata Independiente",
+       "si": 13,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Frente Amplio",
+       "si": 0,
+       "no": 13,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido de la Gente",
+       "si": 9,
+       "no": 3,
+       "abstencion": 0
+      },
+      {
+       "partido": "Renovación Nacional",
+       "si": 10,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Socialista",
+       "si": 0,
+       "no": 10,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Nacional Libertario",
+       "si": 7,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Comunista",
+       "si": 0,
+       "no": 7,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Demócrata Cristiano",
+       "si": 0,
+       "no": 7,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Por la Democracia",
+       "si": 0,
+       "no": 4,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Liberal de Chile",
+       "si": 0,
+       "no": 2,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Cristiano de Chile",
+       "si": 2,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Evolución Política",
+       "si": 2,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Federación Regionalista Verde Social",
+       "si": 0,
+       "no": 0,
+       "abstencion": 1
+      },
+      {
+       "partido": "Partido Radical de Chile",
+       "si": 0,
+       "no": 1,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Demócratas Chile",
+       "si": 1,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Acción Humanista",
+       "si": 0,
+       "no": 1,
+       "abstencion": 0
+      }
+     ],
+     "discolos": [
+      {
+       "nombre": "Fabián Ossandón",
+       "partido": "Partido de la Gente",
+       "voto": "no",
+       "mayoria_del_partido": "si",
+       "votos_mayoria": 9,
+       "votos_en_contra_de_su_partido": 3
+      },
+      {
+       "nombre": "Tamara Ramírez",
+       "partido": "Partido de la Gente",
+       "voto": "no",
+       "mayoria_del_partido": "si",
+       "votos_mayoria": 9,
+       "votos_en_contra_de_su_partido": 3
+      },
+      {
+       "nombre": "Eileen Urqueta",
+       "partido": "Partido de la Gente",
+       "voto": "no",
+       "mayoria_del_partido": "si",
+       "votos_mayoria": 9,
+       "votos_en_contra_de_su_partido": 3
+      }
+     ]
     },
     "ministerios": [
      "Ministerio de Hacienda"
@@ -329,209 +1474,296 @@
   {
    "tipo": "noticia",
    "voz": {
-    "texto": "En educación, la Cámara aprobó sin cambios un proyecto que ajusta la segunda etapa de la nueva educación pública y el traspaso a los Servicios Locales. Hubo 8 votaciones y todas se aprobaron. Ahora vuelve al Senado con el aviso.",
-    "audio": "episodios/2026-11-09/02-noticia.mp3",
-    "duracion_ms": 14928,
+    "texto": "Lo otro fue educación pública: un ajuste a cómo se traspasan los colegios a los nuevos Servicios Locales. Lo aprobaron sin cambios y vuelve al Senado. ¿Esto en qué me afecta? Si tu hijo va a un colegio público, quizás en algo. Si no, ni una wea.",
+    "audio": "episodios/2026-11-09/03-noticia.mp3",
+    "duracion_ms": 17904,
     "palabras": [
      {
-      "texto": "En",
+      "texto": "Lo",
       "desde_ms": 100,
-      "hasta_ms": 212
+      "hasta_ms": 262,
+      "censurada": false
+     },
+     {
+      "texto": "otro",
+      "desde_ms": 275,
+      "hasta_ms": 512,
+      "censurada": false
+     },
+     {
+      "texto": "fue",
+      "desde_ms": 537,
+      "hasta_ms": 675,
+      "censurada": false
      },
      {
       "texto": "educación",
-      "desde_ms": 237,
-      "hasta_ms": 862
-     },
-     {
-      "texto": "la",
-      "desde_ms": 1137,
-      "hasta_ms": 1237
-     },
-     {
-      "texto": "Cámara",
-      "desde_ms": 1312,
-      "hasta_ms": 1600
-     },
-     {
-      "texto": "aprobó",
-      "desde_ms": 1625,
-      "hasta_ms": 1975
-     },
-     {
-      "texto": "sin",
-      "desde_ms": 2000,
-      "hasta_ms": 2225
-     },
-     {
-      "texto": "cambios",
-      "desde_ms": 2237,
-      "hasta_ms": 2575
-     },
-     {
-      "texto": "un",
-      "desde_ms": 2600,
-      "hasta_ms": 2725
-     },
-     {
-      "texto": "proyecto",
-      "desde_ms": 2725,
-      "hasta_ms": 3175
-     },
-     {
-      "texto": "que",
-      "desde_ms": 3237,
-      "hasta_ms": 3275
-     },
-     {
-      "texto": "ajusta",
-      "desde_ms": 3275,
-      "hasta_ms": 3712
-     },
-     {
-      "texto": "la",
-      "desde_ms": 3737,
-      "hasta_ms": 3837
-     },
-     {
-      "texto": "segunda",
-      "desde_ms": 3850,
-      "hasta_ms": 4250
-     },
-     {
-      "texto": "etapa",
-      "desde_ms": 4300,
-      "hasta_ms": 4637
-     },
-     {
-      "texto": "de",
-      "desde_ms": 4650,
-      "hasta_ms": 4737
-     },
-     {
-      "texto": "la",
-      "desde_ms": 4775,
-      "hasta_ms": 4862
-     },
-     {
-      "texto": "nueva",
-      "desde_ms": 4887,
-      "hasta_ms": 5125
-     },
-     {
-      "texto": "educación",
-      "desde_ms": 5187,
-      "hasta_ms": 5725
+      "desde_ms": 687,
+      "hasta_ms": 1200,
+      "censurada": false
      },
      {
       "texto": "pública",
-      "desde_ms": 5750,
-      "hasta_ms": 6175
+      "desde_ms": 1212,
+      "hasta_ms": 1650,
+      "censurada": false
      },
      {
-      "texto": "y",
-      "desde_ms": 6200,
-      "hasta_ms": 6287
+      "texto": "un",
+      "desde_ms": 1937,
+      "hasta_ms": 2037,
+      "censurada": false
      },
      {
-      "texto": "el",
-      "desde_ms": 6300,
-      "hasta_ms": 6425
-     },
-     {
-      "texto": "traspaso",
-      "desde_ms": 6450,
-      "hasta_ms": 6925
+      "texto": "ajuste",
+      "desde_ms": 2050,
+      "hasta_ms": 2462,
+      "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 6937,
-      "hasta_ms": 6975
+      "desde_ms": 2462,
+      "hasta_ms": 2500,
+      "censurada": false
      },
      {
-      "texto": "los",
-      "desde_ms": 7000,
-      "hasta_ms": 7125
-     },
-     {
-      "texto": "Servicios",
-      "desde_ms": 7125,
-      "hasta_ms": 7625
-     },
-     {
-      "texto": "Locales",
-      "desde_ms": 7650,
-      "hasta_ms": 8225
-     },
-     {
-      "texto": "Hubo",
-      "desde_ms": 9112,
-      "hasta_ms": 9350
-     },
-     {
-      "texto": "8 votaciones",
-      "desde_ms": 9375,
-      "hasta_ms": 10312
-     },
-     {
-      "texto": "y",
-      "desde_ms": 10325,
-      "hasta_ms": 10362
-     },
-     {
-      "texto": "todas",
-      "desde_ms": 10462,
-      "hasta_ms": 10712
+      "texto": "cómo",
+      "desde_ms": 2575,
+      "hasta_ms": 2750,
+      "censurada": false
      },
      {
       "texto": "se",
-      "desde_ms": 10712,
-      "hasta_ms": 10800
+      "desde_ms": 2762,
+      "hasta_ms": 2862,
+      "censurada": false
+     },
+     {
+      "texto": "traspasan",
+      "desde_ms": 2937,
+      "hasta_ms": 3425,
+      "censurada": false
+     },
+     {
+      "texto": "los",
+      "desde_ms": 3462,
+      "hasta_ms": 3575,
+      "censurada": false
+     },
+     {
+      "texto": "colegios",
+      "desde_ms": 3625,
+      "hasta_ms": 4125,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 4125,
+      "hasta_ms": 4175,
+      "censurada": false
+     },
+     {
+      "texto": "los",
+      "desde_ms": 4187,
+      "hasta_ms": 4362,
+      "censurada": false
+     },
+     {
+      "texto": "nuevos",
+      "desde_ms": 4387,
+      "hasta_ms": 4712,
+      "censurada": false
+     },
+     {
+      "texto": "Servicios",
+      "desde_ms": 4712,
+      "hasta_ms": 5187,
+      "censurada": false
+     },
+     {
+      "texto": "Locales",
+      "desde_ms": 5212,
+      "hasta_ms": 5800,
+      "censurada": false
+     },
+     {
+      "texto": "Lo",
+      "desde_ms": 6700,
+      "hasta_ms": 6800,
+      "censurada": false
      },
      {
       "texto": "aprobaron",
-      "desde_ms": 10800,
-      "hasta_ms": 11350
+      "desde_ms": 6800,
+      "hasta_ms": 7287,
+      "censurada": false
      },
      {
-      "texto": "Ahora",
-      "desde_ms": 12237,
-      "hasta_ms": 12562
+      "texto": "sin",
+      "desde_ms": 7312,
+      "hasta_ms": 7537,
+      "censurada": false
+     },
+     {
+      "texto": "cambios",
+      "desde_ms": 7550,
+      "hasta_ms": 7937,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 7962,
+      "hasta_ms": 7987,
+      "censurada": false
      },
      {
       "texto": "vuelve",
-      "desde_ms": 12600,
-      "hasta_ms": 12887
+      "desde_ms": 8037,
+      "hasta_ms": 8312,
+      "censurada": false
      },
      {
       "texto": "al",
-      "desde_ms": 12900,
-      "hasta_ms": 13000
+      "desde_ms": 8325,
+      "hasta_ms": 8437,
+      "censurada": false
      },
      {
       "texto": "Senado",
-      "desde_ms": 13012,
-      "hasta_ms": 13375
+      "desde_ms": 8450,
+      "hasta_ms": 8875,
+      "censurada": false
      },
      {
-      "texto": "con",
-      "desde_ms": 13437,
-      "hasta_ms": 13550
+      "texto": "Esto",
+      "desde_ms": 9762,
+      "hasta_ms": 10012,
+      "censurada": false
      },
      {
-      "texto": "el",
-      "desde_ms": 13562,
-      "hasta_ms": 13662
+      "texto": "en",
+      "desde_ms": 10025,
+      "hasta_ms": 10150,
+      "censurada": false
      },
      {
-      "texto": "aviso",
-      "desde_ms": 13662,
-      "hasta_ms": 14037
+      "texto": "qué",
+      "desde_ms": 10150,
+      "hasta_ms": 10225,
+      "censurada": false
+     },
+     {
+      "texto": "me",
+      "desde_ms": 10250,
+      "hasta_ms": 10325,
+      "censurada": false
+     },
+     {
+      "texto": "afecta",
+      "desde_ms": 10337,
+      "hasta_ms": 10812,
+      "censurada": false
+     },
+     {
+      "texto": "Si",
+      "desde_ms": 11700,
+      "hasta_ms": 11862,
+      "censurada": false
+     },
+     {
+      "texto": "tu",
+      "desde_ms": 11950,
+      "hasta_ms": 12025,
+      "censurada": false
+     },
+     {
+      "texto": "hijo",
+      "desde_ms": 12062,
+      "hasta_ms": 12300,
+      "censurada": false
+     },
+     {
+      "texto": "va",
+      "desde_ms": 12337,
+      "hasta_ms": 12487,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 12512,
+      "hasta_ms": 12525,
+      "censurada": false
+     },
+     {
+      "texto": "un",
+      "desde_ms": 12575,
+      "hasta_ms": 12737,
+      "censurada": false
+     },
+     {
+      "texto": "colegio",
+      "desde_ms": 12737,
+      "hasta_ms": 13112,
+      "censurada": false
+     },
+     {
+      "texto": "público",
+      "desde_ms": 13200,
+      "hasta_ms": 13625,
+      "censurada": false
+     },
+     {
+      "texto": "quizás",
+      "desde_ms": 13912,
+      "hasta_ms": 14287,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 14300,
+      "hasta_ms": 14375,
+      "censurada": false
+     },
+     {
+      "texto": "algo",
+      "desde_ms": 14400,
+      "hasta_ms": 14712,
+      "censurada": false
+     },
+     {
+      "texto": "Si",
+      "desde_ms": 15612,
+      "hasta_ms": 15800,
+      "censurada": false
+     },
+     {
+      "texto": "no",
+      "desde_ms": 15825,
+      "hasta_ms": 16037,
+      "censurada": false
+     },
+     {
+      "texto": "ni",
+      "desde_ms": 16300,
+      "hasta_ms": 16462,
+      "censurada": false
+     },
+     {
+      "texto": "una",
+      "desde_ms": 16500,
+      "hasta_ms": 16687,
+      "censurada": false
+     },
+     {
+      "texto": "wea",
+      "desde_ms": 16712,
+      "hasta_ms": 17000,
+      "censurada": false
      }
     ],
     "motor": "edge-tts"
    },
-   "titular": "Educación pública: ajustes al traspaso",
+   "titular": "Educación pública: ajustan el traspaso",
    "dato": {
     "id": "C-18551-04",
     "camara": "camara",
@@ -547,7 +1779,127 @@
      "resultado": "Aprobado",
      "tipo": "General",
      "quorum": "Quórum Calificado",
-     "tramite": "Segundo Trámite"
+     "tramite": "Segundo Trámite",
+     "por_partido": [
+      {
+       "partido": "Partido Republicano",
+       "si": 24,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Independientes",
+       "si": 14,
+       "no": 9,
+       "abstencion": 0
+      },
+      {
+       "partido": "Unión Demócrata Independiente",
+       "si": 12,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Renovación Nacional",
+       "si": 10,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido de la Gente",
+       "si": 9,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Frente Amplio",
+       "si": 0,
+       "no": 7,
+       "abstencion": 1
+      },
+      {
+       "partido": "Partido Nacional Libertario",
+       "si": 7,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Socialista",
+       "si": 0,
+       "no": 7,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Comunista",
+       "si": 0,
+       "no": 6,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Demócrata Cristiano",
+       "si": 1,
+       "no": 5,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Liberal de Chile",
+       "si": 0,
+       "no": 2,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Cristiano de Chile",
+       "si": 2,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Por la Democracia",
+       "si": 0,
+       "no": 2,
+       "abstencion": 0
+      },
+      {
+       "partido": "Evolución Política",
+       "si": 2,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Radical de Chile",
+       "si": 0,
+       "no": 1,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Demócratas Chile",
+       "si": 1,
+       "no": 0,
+       "abstencion": 0
+      },
+      {
+       "partido": "Partido Acción Humanista",
+       "si": 0,
+       "no": 1,
+       "abstencion": 0
+      },
+      {
+       "partido": "Federación Regionalista Verde Social",
+       "si": 0,
+       "no": 0,
+       "abstencion": 0
+      }
+     ],
+     "discolos": [
+      {
+       "nombre": "Cristian Mella",
+       "partido": "Partido Demócrata Cristiano",
+       "voto": "si",
+       "mayoria_del_partido": "no",
+       "votos_mayoria": 5,
+       "votos_en_contra_de_su_partido": 1
+      }
+     ]
     },
     "ministerios": [
      "Ministerio de Hacienda",
@@ -620,71 +1972,427 @@
    }
   },
   {
-   "tipo": "cierre",
+   "tipo": "cahuin",
    "voz": {
-    "texto": "Las fuentes oficiales están en la descripción. Mañana te cuento qué viene.",
-    "audio": "episodios/2026-11-09/03-cierre.mp3",
-    "duracion_ms": 5592,
+    "texto": "Y el cahuín: Cristian Mella fue el único DC que votó distinto a su partido en educación. En el Presupuesto, 3 del PDG se descolgaron de los otros 9. Y Emilia Schneider dejó reserva de constitucionalidad: esto podría terminar en el Tribunal Constitucional.",
+    "audio": "episodios/2026-11-09/04-cahuin.mp3",
+    "duracion_ms": 17424,
     "palabras": [
      {
-      "texto": "Las",
+      "texto": "Y",
       "desde_ms": 100,
-      "hasta_ms": 287
+      "hasta_ms": 187,
+      "censurada": false
      },
      {
-      "texto": "fuentes",
-      "desde_ms": 312,
-      "hasta_ms": 662
+      "texto": "el",
+      "desde_ms": 187,
+      "hasta_ms": 300,
+      "censurada": false
      },
      {
-      "texto": "oficiales",
-      "desde_ms": 662,
-      "hasta_ms": 1237
+      "texto": "cahuín",
+      "desde_ms": 350,
+      "hasta_ms": 762,
+      "censurada": false
      },
      {
-      "texto": "están",
-      "desde_ms": 1237,
-      "hasta_ms": 1537
+      "texto": "Cristian",
+      "desde_ms": 1037,
+      "hasta_ms": 1425,
+      "censurada": false
+     },
+     {
+      "texto": "Mella",
+      "desde_ms": 1462,
+      "hasta_ms": 1712,
+      "censurada": false
+     },
+     {
+      "texto": "fue",
+      "desde_ms": 1737,
+      "hasta_ms": 1887,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 1950,
+      "hasta_ms": 2012,
+      "censurada": false
+     },
+     {
+      "texto": "único",
+      "desde_ms": 2025,
+      "hasta_ms": 2362,
+      "censurada": false
+     },
+     {
+      "texto": "DC",
+      "desde_ms": 2387,
+      "hasta_ms": 2650,
+      "censurada": false
+     },
+     {
+      "texto": "que",
+      "desde_ms": 2737,
+      "hasta_ms": 2812,
+      "censurada": false
+     },
+     {
+      "texto": "votó",
+      "desde_ms": 2850,
+      "hasta_ms": 3112,
+      "censurada": false
+     },
+     {
+      "texto": "distinto",
+      "desde_ms": 3150,
+      "hasta_ms": 3625,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 3625,
+      "hasta_ms": 3675,
+      "censurada": false
+     },
+     {
+      "texto": "su",
+      "desde_ms": 3687,
+      "hasta_ms": 3787,
+      "censurada": false
+     },
+     {
+      "texto": "partido",
+      "desde_ms": 3850,
+      "hasta_ms": 4262,
+      "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 1550,
-      "hasta_ms": 1625
+      "desde_ms": 4287,
+      "hasta_ms": 4350,
+      "censurada": false
+     },
+     {
+      "texto": "educación",
+      "desde_ms": 4375,
+      "hasta_ms": 4962,
+      "censurada": false
+     },
+     {
+      "texto": "En",
+      "desde_ms": 5850,
+      "hasta_ms": 5962,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 5975,
+      "hasta_ms": 6075,
+      "censurada": false
+     },
+     {
+      "texto": "Presupuesto",
+      "desde_ms": 6137,
+      "hasta_ms": 6787,
+      "censurada": false
+     },
+     {
+      "texto": "3",
+      "desde_ms": 7125,
+      "hasta_ms": 7325,
+      "censurada": false
+     },
+     {
+      "texto": "del",
+      "desde_ms": 7337,
+      "hasta_ms": 7462,
+      "censurada": false
+     },
+     {
+      "texto": "PDG",
+      "desde_ms": 7550,
+      "hasta_ms": 7912,
+      "censurada": false
+     },
+     {
+      "texto": "se",
+      "desde_ms": 7937,
+      "hasta_ms": 8062,
+      "censurada": false
+     },
+     {
+      "texto": "descolgaron",
+      "desde_ms": 8087,
+      "hasta_ms": 8687,
+      "censurada": false
+     },
+     {
+      "texto": "de",
+      "desde_ms": 8737,
+      "hasta_ms": 8787,
+      "censurada": false
+     },
+     {
+      "texto": "los",
+      "desde_ms": 8812,
+      "hasta_ms": 9000,
+      "censurada": false
+     },
+     {
+      "texto": "otros",
+      "desde_ms": 9000,
+      "hasta_ms": 9300,
+      "censurada": false
+     },
+     {
+      "texto": "9",
+      "desde_ms": 9325,
+      "hasta_ms": 9625,
+      "censurada": false
+     },
+     {
+      "texto": "Y",
+      "desde_ms": 10512,
+      "hasta_ms": 10600,
+      "censurada": false
+     },
+     {
+      "texto": "Emilia",
+      "desde_ms": 10612,
+      "hasta_ms": 10987,
+      "censurada": false
+     },
+     {
+      "texto": "Schneider",
+      "desde_ms": 11012,
+      "hasta_ms": 11487,
+      "censurada": false
+     },
+     {
+      "texto": "dejó",
+      "desde_ms": 11525,
+      "hasta_ms": 11787,
+      "censurada": false
+     },
+     {
+      "texto": "reserva",
+      "desde_ms": 11800,
+      "hasta_ms": 12237,
+      "censurada": false
+     },
+     {
+      "texto": "de",
+      "desde_ms": 12262,
+      "hasta_ms": 12337,
+      "censurada": false
+     },
+     {
+      "texto": "constitucionalidad",
+      "desde_ms": 12400,
+      "hasta_ms": 13462,
+      "censurada": false
+     },
+     {
+      "texto": "esto",
+      "desde_ms": 13750,
+      "hasta_ms": 13987,
+      "censurada": false
+     },
+     {
+      "texto": "podría",
+      "desde_ms": 14062,
+      "hasta_ms": 14412,
+      "censurada": false
+     },
+     {
+      "texto": "terminar",
+      "desde_ms": 14487,
+      "hasta_ms": 14900,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 14912,
+      "hasta_ms": 15000,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 15025,
+      "hasta_ms": 15150,
+      "censurada": false
+     },
+     {
+      "texto": "Tribunal",
+      "desde_ms": 15187,
+      "hasta_ms": 15612,
+      "censurada": false
+     },
+     {
+      "texto": "Constitucional",
+      "desde_ms": 15675,
+      "hasta_ms": 16537,
+      "censurada": false
+     }
+    ],
+    "motor": "edge-tts"
+   },
+   "cahuines": [
+    {
+     "tipo": "voto_contra_su_partido",
+     "boletin": "18551-04",
+     "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+     "nombre": "Cristian Mella",
+     "partido": "Partido Demócrata Cristiano",
+     "voto": "si",
+     "mayoria_del_partido": "no",
+     "votos_mayoria": 5,
+     "votos_en_contra_de_su_partido": 1,
+     "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04"
+    },
+    {
+     "tipo": "reserva_de_constitucionalidad",
+     "boletin": "18551-04",
+     "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+     "detalle": "La diputada Emilia Schneider Videla formula reserva de constitucionalidad.",
+     "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04"
+    },
+    {
+     "tipo": "voto_contra_su_partido",
+     "boletin": "18702-05",
+     "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+     "nombre": "Fabián Ossandón",
+     "partido": "Partido de la Gente",
+     "voto": "no",
+     "mayoria_del_partido": "si",
+     "votos_mayoria": 9,
+     "votos_en_contra_de_su_partido": 3,
+     "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+    },
+    {
+     "tipo": "voto_contra_su_partido",
+     "boletin": "18702-05",
+     "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+     "nombre": "Tamara Ramírez",
+     "partido": "Partido de la Gente",
+     "voto": "no",
+     "mayoria_del_partido": "si",
+     "votos_mayoria": 9,
+     "votos_en_contra_de_su_partido": 3,
+     "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+    },
+    {
+     "tipo": "voto_contra_su_partido",
+     "boletin": "18702-05",
+     "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+     "nombre": "Eileen Urqueta",
+     "partido": "Partido de la Gente",
+     "voto": "no",
+     "mayoria_del_partido": "si",
+     "votos_mayoria": 9,
+     "votos_en_contra_de_su_partido": 3,
+     "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+    },
+    {
+     "tipo": "no_votaron",
+     "cantidad": 8,
+     "detalle": "diputados que no votaron en ninguna votación del día",
+     "fuente": "camara.cl"
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "voz": {
+    "texto": "¿Avanzaron proyectos importantes? Uno grande, pero a medias. Las fuentes están en la descripción.",
+    "audio": "episodios/2026-11-09/05-cierre.mp3",
+    "duracion_ms": 8112,
+    "palabras": [
+     {
+      "texto": "Avanzaron",
+      "desde_ms": 100,
+      "hasta_ms": 687,
+      "censurada": false
+     },
+     {
+      "texto": "proyectos",
+      "desde_ms": 700,
+      "hasta_ms": 1212,
+      "censurada": false
+     },
+     {
+      "texto": "importantes",
+      "desde_ms": 1237,
+      "hasta_ms": 2000,
+      "censurada": false
+     },
+     {
+      "texto": "Uno",
+      "desde_ms": 2887,
+      "hasta_ms": 3087,
+      "censurada": false
+     },
+     {
+      "texto": "grande",
+      "desde_ms": 3125,
+      "hasta_ms": 3500,
+      "censurada": false
+     },
+     {
+      "texto": "pero",
+      "desde_ms": 3800,
+      "hasta_ms": 3962,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 3962,
+      "hasta_ms": 4025,
+      "censurada": false
+     },
+     {
+      "texto": "medias",
+      "desde_ms": 4050,
+      "hasta_ms": 4562,
+      "censurada": false
+     },
+     {
+      "texto": "Las",
+      "desde_ms": 5450,
+      "hasta_ms": 5637,
+      "censurada": false
+     },
+     {
+      "texto": "fuentes",
+      "desde_ms": 5662,
+      "hasta_ms": 6037,
+      "censurada": false
+     },
+     {
+      "texto": "están",
+      "desde_ms": 6037,
+      "hasta_ms": 6325,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 6337,
+      "hasta_ms": 6425,
+      "censurada": false
      },
      {
       "texto": "la",
-      "desde_ms": 1650,
-      "hasta_ms": 1725
+      "desde_ms": 6450,
+      "hasta_ms": 6525,
+      "censurada": false
      },
      {
       "texto": "descripción",
-      "desde_ms": 1750,
-      "hasta_ms": 2425
-     },
-     {
-      "texto": "Mañana",
-      "desde_ms": 3312,
-      "hasta_ms": 3712
-     },
-     {
-      "texto": "te",
-      "desde_ms": 3787,
-      "hasta_ms": 3837
-     },
-     {
-      "texto": "cuento",
-      "desde_ms": 3925,
-      "hasta_ms": 4187
-     },
-     {
-      "texto": "qué",
-      "desde_ms": 4250,
-      "hasta_ms": 4325
-     },
-     {
-      "texto": "viene",
-      "desde_ms": 4350,
-      "hasta_ms": 4675
+      "desde_ms": 6550,
+      "hasta_ms": 7212,
+      "censurada": false
      }
     ],
     "motor": "edge-tts"

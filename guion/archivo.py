@@ -64,10 +64,35 @@ def escribir_md(ep: dict, guion: dict, destino: Path) -> None:
            "     Cada número que escribas tiene que estar en esos datos: el generador lo revisa.",
            f"     Para regenerar voz y video:  python -m guion.generar --desde-guion {destino.as_posix()} -->", "",
            "## GANCHO", guion["gancho"], ""]
+    j = ep.get("jornada") or {}
+    out += ["## JORNADA"]
+    jc, js = j.get("camara", {}), j.get("senado", {})
+    out += [f"> Cámara: {len(jc.get('sesiones', []))} sesiones · "
+            + ", ".join(f"n° {s['numero']} {s['tipo']} {s['inicio']}-{s['termino']}" for s in jc.get("sesiones", [])),
+            f"> Cámara: {jc.get('horas_en_sala')} h {jc.get('minutos_en_sala_resto')} min en Sala · "
+            f"{jc.get('votaciones')} votaciones · {jc.get('proyectos_votados')} proyectos votados",
+            f"> Cámara: {jc.get('diputados_que_votaron')} de {jc.get('total_diputados')} diputados votaron al menos una vez"
+            f" ({jc.get('diputados_que_no_votaron_nunca')} no votaron nunca)",
+            f"> Senado: {js.get('votaciones')} votaciones · {js.get('proyectos_votados')} proyectos votados · "
+            f"leyes publicadas: {j.get('leyes_publicadas')}"]
+    ctx = {k: v for k, v in (ep.get("contexto") or {}).items() if not k.startswith("_") and v is not None}
+    if ctx:
+        out += [f"> Contexto fijo: {k} = {v}" for k, v in ctx.items()]
+    out += [guion.get("jornada", ""), ""]
     for e in guion["escenas"]:
         out += [f"## ESCENA {e['item_id']}", f"titular: {e['titular']}"]
         out += [f"> {l}" for l in _ficha(por_id[e["item_id"]])]
         out += [e["narracion"], ""]
+    out += ["## CAHUIN", "> Cahuines del día según registros oficiales (deja vacío si no hay):"]
+    for c in ep.get("cahuines") or []:
+        if c["tipo"] == "voto_contra_su_partido":
+            out.append(f"> · {c['nombre']} ({c['partido']}) votó {c['voto']} y su partido {c['mayoria_del_partido']} "
+                       f"({c['votos_mayoria']} votos) · boletín {c['boletin']}")
+        elif c["tipo"] == "reserva_de_constitucionalidad":
+            out.append(f"> · {c['detalle']} · boletín {c['boletin']}")
+        else:
+            out.append(f"> · {c.get('cantidad')} {c.get('detalle')}")
+    out += [guion.get("cahuin", ""), ""]
     out += ["## CIERRE", guion["cierre"], ""]
     destino.parent.mkdir(parents=True, exist_ok=True)
     destino.write_text("\n".join(out), encoding="utf-8")
@@ -75,7 +100,7 @@ def escribir_md(ep: dict, guion: dict, destino: Path) -> None:
 
 def leer_md(origen: Path) -> dict:
     texto = re.sub(r"<!--.*?-->", "", origen.read_text(encoding="utf-8"), flags=re.S)
-    guion = {"gancho": "", "escenas": [], "cierre": "", "generado_por": "editado a mano"}
+    guion = {"gancho": "", "jornada": "", "escenas": [], "cahuin": "", "cierre": "", "generado_por": "editado a mano"}
     for bloque in re.split(r"^## ", texto, flags=re.M)[1:]:
         cabecera, _, cuerpo = bloque.partition("\n")
         lineas = [l for l in cuerpo.splitlines() if not l.lstrip().startswith(">")]
@@ -88,8 +113,10 @@ def leer_md(origen: Path) -> dict:
                 resto.append(l)
         narracion = re.sub(r"\s+", " ", " ".join(resto)).strip()
         cab = cabecera.strip().upper()
-        if cab == "GANCHO":
-            guion["gancho"] = narracion
+        if cab in ("GANCHO", "JORNADA"):
+            guion[cab.lower()] = narracion
+        elif cab in ("CAHUIN", "CAHUÍN"):
+            guion["cahuin"] = narracion
         elif cab == "CIERRE":
             guion["cierre"] = narracion
         elif cab.startswith("ESCENA"):

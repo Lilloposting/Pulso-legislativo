@@ -1,0 +1,21 @@
+# Raíces de palabras que se tapan con un pitido en el audio y *** en pantalla.
+# Una por línea; se compara sin tildes y en minúsculas contra el comienzo de cada palabra.
+# "wea", "weón" y "hueón" NO están: se dicen tal cual.
+ctm
+conchetumare
+conchetumadre
+conchesumadre
+conchesumare
+concha
+culiao
+culiado
+culia
+pajea
+pajero
+puta
+puto
+mierda
+chucha
+maricon
+maraco
+carajo

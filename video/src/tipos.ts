@@ -1,6 +1,6 @@
 // Estructura de public/episodios/<fecha>/props.json (la genera `python -m guion.generar`).
 
-export type Palabra = { texto: string; desde_ms: number; hasta_ms: number };
+export type Palabra = { texto: string; desde_ms: number; hasta_ms: number; censurada?: boolean };
 
 export type Voz = {
   texto: string;
@@ -36,8 +36,46 @@ export type Dato = {
   fuente: string;
 };
 
+export type Persona = { nombre: string; partido: string; registro?: string };
+
+export type Jornada = {
+  camara: {
+    lista_votaron: Persona[];
+    lista_no_votaron: Persona[];
+    asistencia_publicada: boolean;
+    lista_ausentes: Persona[];
+    diputados_ausentes: number | null;
+    sesiones: { numero: number; tipo: string; inicio: string; termino: string | null }[];
+    horas_en_sala: number;
+    minutos_en_sala_resto: number;
+    minutos_en_sala_total: number;
+    votaciones: number;
+    proyectos_votados: number;
+    diputados_que_votaron: number;
+    total_diputados: number;
+    diputados_que_no_votaron_nunca: number | null;
+  };
+  senado: { votaciones: number; proyectos_votados: number };
+  leyes_publicadas: number;
+};
+
+export type Cahuin = {
+  tipo: "voto_contra_su_partido" | "reserva_de_constitucionalidad" | "no_votaron";
+  nombre?: string;
+  partido?: string;
+  voto?: string;
+  mayoria_del_partido?: string;
+  votos_mayoria?: number;
+  detalle?: string;
+  cantidad?: number;
+  boletin?: string;
+  titulo?: string | null;
+};
+
 export type Escena =
   | { tipo: "intro"; voz: Voz }
+  | { tipo: "jornada"; voz: Voz; jornada: Jornada }
+  | { tipo: "cahuin"; voz: Voz; cahuines: Cahuin[] }
   | { tipo: "noticia"; voz: Voz; titular: string; dato: Dato }
   | { tipo: "cierre"; voz: Voz };
 

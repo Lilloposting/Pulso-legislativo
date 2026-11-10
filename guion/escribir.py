@@ -21,6 +21,7 @@ ESQUEMA = {
     "type": "object",
     "properties": {
         "gancho": {"type": "string"},
+        "jornada": {"type": "string"},
         "escenas": {
             "type": "array",
             "items": {
@@ -34,9 +35,10 @@ ESQUEMA = {
                 "additionalProperties": False,
             },
         },
+        "cahuin": {"type": "string"},
         "cierre": {"type": "string"},
     },
-    "required": ["gancho", "escenas", "cierre"],
+    "required": ["gancho", "jornada", "escenas", "cahuin", "cierre"],
     "additionalProperties": False,
 }
 
@@ -60,8 +62,10 @@ def validar(guion: dict, episodio: dict) -> list[str]:
         if len(e["titular"].split()) > 10:
             errores.append(f"{e['item_id']}: titular de más de 10 palabras")
     fecha_ok = _numeros(episodio["fecha"])
-    for campo in ("gancho", "cierre"):
-        for n in _numeros(guion[campo]) - fecha_ok:
+    dia = _numeros(json.dumps({k: episodio.get(k) for k in ("jornada", "cahuines", "contexto", "fecha")},
+                              ensure_ascii=False, default=str))
+    for campo, permitidos in (("gancho", dia), ("jornada", dia), ("cahuin", dia), ("cierre", fecha_ok | dia)):
+        for n in _numeros(guion.get(campo) or "") - permitidos:
             errores.append(f"{campo}: el número {n} no corresponde a un dato")
     return errores
 
@@ -134,9 +138,16 @@ def con_plantilla(episodio: dict) -> dict:
                  f"Quedó con {vp.get('si')} votos a favor, {vp.get('no')} en contra"
                  + (f" y {abst} {'abstención' if abst == 1 else 'abstenciones'}." if abst else "."))
         escenas.append({"item_id": it["id"], "titular": corto, "narracion": n})
+    j = episodio.get("jornada", {}).get("camara", {})
+    jornada = (f"La Cámara estuvo {j.get('horas_en_sala')} horas y {j.get('minutos_en_sala_resto')} minutos en Sala "
+               f"y votó {j.get('proyectos_votados')} proyectos.") if j.get("minutos_en_sala_total") else         "Hoy la Cámara no tuvo sesión de Sala."
+    c = next((x for x in episodio.get("cahuines", []) if x["tipo"] == "voto_contra_su_partido"), None)
+    cahuin = (f"El cahuín: {c['nombre']}, del {c['partido']}, votó distinto a su partido.") if c else ""
     return {
         "gancho": "Te cuento lo que pasó en el Congreso.",
+        "jornada": jornada,
         "escenas": escenas,
+        "cahuin": cahuin,
         "cierre": "Las fuentes oficiales están en la descripción. Mañana te cuento más.",
         "generado_por": "plantilla",
     }

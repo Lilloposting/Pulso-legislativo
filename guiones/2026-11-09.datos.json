@@ -1,5 +1,723 @@
 {
  "fecha": "2026-11-09",
+ "jornada": {
+  "camara": {
+   "lista_votaron": [
+    {
+     "nombre": "Agustín Romero Leiva",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Alejandra Valdebenito Torres",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Alejandro Bernales Maldonado",
+     "partido": "Partido Liberal de Chile"
+    },
+    {
+     "nombre": "Alejandro Riquelme Ducci",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Alex Nahuelquin Nahuelquin",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Ana María Gazmuri Vieira",
+     "partido": "Partido Acción Humanista"
+    },
+    {
+     "nombre": "Andrea Macías Palma",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Andrea Parra Sauterel",
+     "partido": "Partido Por la Democracia"
+    },
+    {
+     "nombre": "Benjamín Lorca Inzunza",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Benjamín Moreno Bascur",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Bernardo Salinas Maya",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Carlo Arqueros Pizarro",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Carlos Bianchi Chelech",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Carlos Carvajal Gallardo",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Carlos Chandía Alarcón",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Carlos Cuadrado Prats",
+     "partido": "Partido Por la Democracia"
+    },
+    {
+     "nombre": "Carolina Cucumides Calderón",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Carolina Tello Rojas",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Catalina Del Real Mihovilovic",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Chiara Barchiesi Chávez",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Claudia Mora Vega",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Claudia Reyes Larenas",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Constanza Hube Portus",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Constanza Schonhaut Soto",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Consuelo Veloso Ávila",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Cristian Contreras Radovic",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Cristian Mella Andaur",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Cristian Menchaca Pinochet",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Cristian Neira Martínez",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Cristián Araya Lerdo de Tejada",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Cristián Tapia Ramos",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Cristóbal Martínez Ramírez",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Cristóbal Urruticoechea Ríos",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "César Valenzuela Maass",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Daniel Bustos Leal",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Daniel Lilayu Vivanco",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Daniel Manouchehri Lobos",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Daniel Valenzuela Salazar",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Daniela Serrano Salazar",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Diego Schalper Sepúlveda",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Diego Vergara Rodríguez",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Eduardo Cretton Rebolledo",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Eduardo Durán Salinas",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Eileen Urqueta Rojas",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Emilia Nuyado Ancapichun",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Emilia Schneider Videla",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Enrique Bassaletti Riess",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Erich Grohs Marín",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Fabián Ossandón Briceño",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Felipe Camaño Cárdenas",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Felipe Ross Correa",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Fernando Ugarte Tejeda",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Fernando Zamorano Peralta",
+     "partido": "Partido Por la Democracia"
+    },
+    {
+     "nombre": "Flor Contreras Vivallo",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Flor Weisse Novoa",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Francesca Muñoz González",
+     "partido": "Partido Cristiano de Chile"
+    },
+    {
+     "nombre": "Francisco Crisóstomo Llanos",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Francisco Orrego Gutiérrez",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Félix Bugueño Sotelo",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Gael Yeomans Araya",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Germán Verdugo Soto",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Gloria Naveillan Arriagada",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Gonzalo Winter Etcheberry",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Guillermo Ramírez Diez",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Guillermo Valdés Carmona",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Gustavo Gatica Villarroel",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Hans Marowski Cuevas",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Hotuiti Teao Drago",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Héctor Barría Angulo",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Héctor Ulloa Aguilera",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Ignacio Achurra Díaz",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Ignacio Urcullú Clèment-Lund",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Irací Hassler Jacob",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Jaime Araya Guerrero",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Jaime Bassa Mercado",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Jaime Coloma Álamos",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Jaime Mulet Martínez",
+     "partido": "Federación Regionalista Verde Social"
+    },
+    {
+     "nombre": "Javier Muñoz Riquelme",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Javier Olivares Avendaño",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Javiera Rodríguez Pascual",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Joanna Pérez Olea",
+     "partido": "Partido Demócratas Chile"
+    },
+    {
+     "nombre": "Jorge Alessandri Vergara",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Jorge Brito Hasbún",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Jorge Díaz Ibarra",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Jorge Guzmán Zepeda",
+     "partido": "Evolución Política"
+    },
+    {
+     "nombre": "José Antonio Kast Adriasola",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "José Antonio Rivas Villalobos",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "José Carlos Meza Pereira",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "José Montalva Feuerhake",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Juan Carlos Beltrán Silva",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Juan Irarrázaval Rossel",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Juan Marcelo Valenzuela Henríquez",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Juan Santana Castillo",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Lilian Betancurt Delgado",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Lorena Fries Monleón",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Lorena Pizarro Sierra",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Luis Alberto Cuello Peña y Lillo",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Luis Malla Valenzuela",
+     "partido": "Partido Liberal de Chile"
+    },
+    {
+     "nombre": "Luis Pardo Sáinz",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Luis Sánchez Ossa",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Macarena Santelices Cañas",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Marcela Hernando Pérez",
+     "partido": "Partido Radical de Chile"
+    },
+    {
+     "nombre": "Marco Antonio Sulantay Olivares",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Marcos Barraza Gómez",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Marcos Ilabaca Cerda",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Mario Olavarría Rodríguez",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Marisela Santibáñez Novoa",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Matías Fernández Hartwig",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Mauro González Villarroel",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Natalia Romero Talguia",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Nathalie Castillo Rojas",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Nelson Venegas Salazar",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Omar Sabat Guzmán",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Patricio Briones Moller",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Patricio Pinilla Valencia",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Paula Olmos Contreras",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Paulina Muñoz Minte",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Paz Charpentier Rajcevich",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Pier Karlezi Hazleby",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Priscilla Castillo Gerli",
+     "partido": "Partido Demócrata Cristiano"
+    },
+    {
+     "nombre": "Raúl Leiva Carvajal",
+     "partido": "Partido Socialista"
+    },
+    {
+     "nombre": "Raúl Soto Mardones",
+     "partido": "Partido Por la Democracia"
+    },
+    {
+     "nombre": "René Alinco Bustos",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "René Manuel García García",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Ricardo Neumann Bertín",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Roberto Arroyo Muñoz",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Roberto Celedón Fernández",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Rodrigo Ramírez Parra",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Sara Concha Smith",
+     "partido": "Partido Cristiano de Chile"
+    },
+    {
+     "nombre": "Sebastián Cristoffanini Jaraquemada",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Sebastián Videla Castillo",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Sebastián Zamora Soto",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Sergio Bobadilla Muñoz",
+     "partido": "Unión Demócrata Independiente"
+    },
+    {
+     "nombre": "Sofía González Cortés",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Stephan Schubert Rubio",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Stephanie Jéldrez Ortiz",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Tamara Ramírez Ramírez",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Tatiana Urrutia Herrera",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Tomás Kast Sommerhoff",
+     "partido": "Evolución Política"
+    },
+    {
+     "nombre": "Valentina Becerra Peña",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Valentina Cáceres Monsálvez",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Ximena Naranjo Pinto",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "Ximena Ossandón Irarrázabal",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Zandra Parisi Fernández",
+     "partido": "Partido de la Gente"
+    },
+    {
+     "nombre": "Álvaro Carter Fernández",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Álvaro Jofré Cáceres",
+     "partido": "Partido Nacional Libertario"
+    },
+    {
+     "nombre": "Álvaro Ortiz Vera",
+     "partido": "Partido Demócrata Cristiano"
+    }
+   ],
+   "lista_no_votaron": [
+    {
+     "nombre": "Andrés Celis Montt",
+     "partido": "Renovación Nacional"
+    },
+    {
+     "nombre": "Boris Barrera Moreno",
+     "partido": "Partido Comunista"
+    },
+    {
+     "nombre": "Coca Ericka Ñanco Vásquez",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Javiera Morales Alvarado",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Leandro Kunstmann Collado",
+     "partido": "Partido Republicano"
+    },
+    {
+     "nombre": "Marlene Pérez Cartes",
+     "partido": "Independientes"
+    },
+    {
+     "nombre": "María Francisca Bello Campos",
+     "partido": "Frente Amplio"
+    },
+    {
+     "nombre": "Pamela Jiles Moreno",
+     "partido": "Partido de la Gente"
+    }
+   ],
+   "sesiones": [
+    {
+     "numero": 89,
+     "tipo": "Ordinaria",
+     "inicio": "14:33",
+     "termino": "18:14"
+    },
+    {
+     "numero": 90,
+     "tipo": "Especial",
+     "inicio": "18:30",
+     "termino": "19:55"
+    }
+   ],
+   "horas_en_sala": 5,
+   "minutos_en_sala_resto": 5,
+   "minutos_en_sala_total": 305,
+   "votaciones": 15,
+   "proyectos_votados": 2,
+   "diputados_que_votaron": 147,
+   "total_diputados": 155,
+   "diputados_que_no_votaron_nunca": 8
+  },
+  "senado": {
+   "votaciones": 0,
+   "proyectos_votados": 0
+  },
+  "leyes_publicadas": 0
+ },
+ "cahuines": [
+  {
+   "tipo": "voto_contra_su_partido",
+   "boletin": "18551-04",
+   "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+   "nombre": "Cristian Mella",
+   "partido": "Partido Demócrata Cristiano",
+   "voto": "si",
+   "mayoria_del_partido": "no",
+   "votos_mayoria": 5,
+   "votos_en_contra_de_su_partido": 1,
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04"
+  },
+  {
+   "tipo": "reserva_de_constitucionalidad",
+   "boletin": "18551-04",
+   "titulo": "Modifica la ley N° 21.040, que crea el sistema de educación pública, con la finalidad de ajustar la segunda etapa de instalación y el traspaso de los servicios locales de educación",
+   "detalle": "La diputada Emilia Schneider Videla formula reserva de constitucionalidad.",
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18551-04"
+  },
+  {
+   "tipo": "voto_contra_su_partido",
+   "boletin": "18702-05",
+   "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+   "nombre": "Fabián Ossandón",
+   "partido": "Partido de la Gente",
+   "voto": "no",
+   "mayoria_del_partido": "si",
+   "votos_mayoria": 9,
+   "votos_en_contra_de_su_partido": 3,
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+  },
+  {
+   "tipo": "voto_contra_su_partido",
+   "boletin": "18702-05",
+   "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+   "nombre": "Tamara Ramírez",
+   "partido": "Partido de la Gente",
+   "voto": "no",
+   "mayoria_del_partido": "si",
+   "votos_mayoria": 9,
+   "votos_en_contra_de_su_partido": 3,
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+  },
+  {
+   "tipo": "voto_contra_su_partido",
+   "boletin": "18702-05",
+   "titulo": "Ley de Presupuestos para el Sector Público correspondiente al año 2027",
+   "nombre": "Eileen Urqueta",
+   "partido": "Partido de la Gente",
+   "voto": "no",
+   "mayoria_del_partido": "si",
+   "votos_mayoria": 9,
+   "votos_en_contra_de_su_partido": 3,
+   "fuente": "https://tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=18702-05"
+  },
+  {
+   "tipo": "no_votaron",
+   "cantidad": 8,
+   "detalle": "diputados que no votaron en ninguna votación del día",
+   "fuente": "camara.cl"
+  }
+ ],
  "items": [
   {
    "id": "C-18551-04",
@@ -125,6 +843,16 @@
       "si": 0,
       "no": 0,
       "abstencion": 0
+     }
+    ],
+    "discolos": [
+     {
+      "nombre": "Cristian Mella",
+      "partido": "Partido Demócrata Cristiano",
+      "voto": "si",
+      "mayoria_del_partido": "no",
+      "votos_mayoria": 5,
+      "votos_en_contra_de_su_partido": 1
      }
     ]
    },
@@ -322,6 +1050,32 @@
       "no": 1,
       "abstencion": 0
      }
+    ],
+    "discolos": [
+     {
+      "nombre": "Fabián Ossandón",
+      "partido": "Partido de la Gente",
+      "voto": "no",
+      "mayoria_del_partido": "si",
+      "votos_mayoria": 9,
+      "votos_en_contra_de_su_partido": 3
+     },
+     {
+      "nombre": "Tamara Ramírez",
+      "partido": "Partido de la Gente",
+      "voto": "no",
+      "mayoria_del_partido": "si",
+      "votos_mayoria": 9,
+      "votos_en_contra_de_su_partido": 3
+     },
+     {
+      "nombre": "Eileen Urqueta",
+      "partido": "Partido de la Gente",
+      "voto": "no",
+      "mayoria_del_partido": "si",
+      "votos_mayoria": 9,
+      "votos_en_contra_de_su_partido": 3
+     }
     ]
    },
    "ministerios": [
@@ -364,5 +1118,10 @@
    ]
   }
  ],
- "total_hechos": 2
+ "total_hechos": 2,
+ "contexto": {
+  "_nota": "Datos fijos que el guion puede citar. Completa solo con cifras verificadas y su fuente; null = no se usa.",
+  "dieta_parlamentaria_mensual_bruta_clp": null,
+  "dieta_fuente": null
+ }
 }

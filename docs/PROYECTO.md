@@ -30,9 +30,9 @@ Un sistema automático que:
 
 | Principio | Qué significa en la práctica |
 |---|---|
-| **Neutralidad** | No opinamos sobre partidos ni proyectos. Describimos hechos. |
-| **Trazabilidad** | Todo resumen enlaza al documento oficial. Nada se inventa. |
-| **Lento ≠ malo** | Mostramos tiempos con contexto: algunas leyes necesitan discusión. |
+| **Neutralidad partidaria** | No favorecemos ni atacamos a ningún sector político. La crítica va al Congreso completo, con la misma vara para todos. |
+| **Crítica con datos** | El tono es directo y crítico: si no trabajaron, se dice; si trabajaron, se reconoce. El juicio siempre sale de datos verificables (horas, asistencia, votaciones, proyectos). |
+| **Trazabilidad** | Todo resumen enlaza al documento oficial. Nada se inventa. Si alguien "faltó", es porque lo dice el registro de asistencia. |
 | **Datos abiertos** | Código y datos procesados públicos. |
 | **Simple primero** | Lenguaje de 8° básico, sin jerga, con glosario. |
 

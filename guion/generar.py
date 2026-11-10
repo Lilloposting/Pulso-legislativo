@@ -34,8 +34,13 @@ def producir(ep: dict, guion: dict) -> None:
     """Voz + props.json a partir de datos y guion ya decididos."""
     carpeta = PUBLIC / "episodios" / ep["fecha"]
     rel = f"episodios/{ep['fecha']}"
+    narrar.crear_pitido(PUBLIC / "pitido.wav")
     segmentos = [("intro", guion["gancho"], None)]
+    if guion.get("jornada"):
+        segmentos.append(("jornada", guion["jornada"], None))
     segmentos += [("noticia", e["narracion"], e) for e in guion["escenas"]]
+    if guion.get("cahuin"):
+        segmentos.append(("cahuin", guion["cahuin"], None))
     segmentos += [("cierre", guion["cierre"], None)]
     por_id = {it["id"]: it for it in ep["items"]}
     escenas = []
@@ -47,6 +52,10 @@ def producir(ep: dict, guion: dict) -> None:
         escena = {"tipo": tipo, "voz": voz}
         if esc:
             escena.update(titular=esc["titular"], dato=por_id[esc["item_id"]])
+        elif tipo == "jornada":
+            escena["jornada"] = ep.get("jornada")
+        elif tipo == "cahuin":
+            escena["cahuines"] = ep.get("cahuines")
         escenas.append(escena)
     props = {"fecha": ep["fecha"], "generado_por": guion["generado_por"], "escenas": escenas,
              "fuentes": sorted({it["fuente"] for it in ep["items"]})}

@@ -80,6 +80,24 @@ async def _edge(texto: str, destino: Path) -> list[dict]:
     return palabras
 
 
+_GARABATOS = [l.strip() for l in (Path(__file__).with_name("garabatos.txt")).read_text(encoding="utf-8").splitlines()
+              if l.strip() and not l.startswith("#")]
+
+
+def _normal(p: str) -> str:
+    import unicodedata
+    p = unicodedata.normalize("NFKD", p.lower())
+    return re.sub(r"[^a-zñ]", "", "".join(c for c in p if not unicodedata.combining(c)))
+
+
+def censurar(palabras: list[dict]) -> list[dict]:
+    """Marca las palabras fuertes: el video les pone pitido y *** en subtítulos."""
+    for p in palabras:
+        n = _normal(p["texto"])
+        p["censurada"] = bool(n) and any(n.startswith(g) for g in _GARABATOS)
+    return palabras
+
+
 def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_siguiente: str | None = None) -> dict:
     destino.parent.mkdir(parents=True, exist_ok=True)
     texto = re.sub(r"\s+", " ", texto).strip()
@@ -88,4 +106,21 @@ def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_sig
     else:
         palabras = asyncio.run(_edge(texto, destino))
     return {"texto": texto, "audio": destino.name, "duracion_ms": int(MP3(destino).info.length * 1000),
-            "palabras": palabras, "motor": motor()}
+            "palabras": censurar(palabras), "motor": motor()}
+
+
+def crear_pitido(destino: Path, segundos: float = 1.0, hz: int = 1000) -> None:
+    """El clásico pitido de censura (onda senoidal), para tapar garabatos."""
+    import math
+    import struct
+    import wave
+    if destino.exists():
+        return
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    tasa = 44100
+    with wave.open(str(destino), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(tasa)
+        w.writeframes(b"".join(struct.pack("<h", int(9000 * math.sin(2 * math.pi * hz * i / tasa)))
+                               for i in range(int(tasa * segundos))))

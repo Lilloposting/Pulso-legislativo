@@ -35,7 +35,7 @@ export const Subtitulos: React.FC<{ palabras: Palabra[] }> = ({ palabras }) => {
           const activa = inicio + i === actual && ms >= p.desde_ms;
           return (
             <span key={i} style={{ color: activa ? color.oro : color.blanco, marginRight: 16 }}>
-              {p.texto}
+              {p.censurada ? "***" : p.texto}
             </span>
           );
         })}

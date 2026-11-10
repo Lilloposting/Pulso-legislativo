@@ -6,7 +6,7 @@ Hoy lee directo de las fuentes (scrapers). Cuando la base esté cargada, se pued
 from __future__ import annotations
 
 import logging
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date
 
 from scrapers import camara, senado
@@ -30,6 +30,87 @@ def _voto_principal(vots: list[dict]) -> dict:
 
 
 _PARTIDOS: dict[str, str] = {}
+_NOMBRES: dict[str, str] = {}
+_COMPLETOS: dict[str, str] = {}
+
+
+def _cargar_diputados() -> None:
+    if not _COMPLETOS:
+        parl, _, _ = camara.bajar_diputados_actuales()
+        _PARTIDOS.update({p["id"]: p["partido_actual"] or "Sin dato" for p in parl})
+        _NOMBRES.update({p["id"]: f"{p['nombre'].split()[0]} {p['apellido_paterno']}" for p in parl if p["nombre"]})
+        _COMPLETOS.update({p["id"]: " ".join(x for x in (p["nombre"], p["apellido_paterno"], p["apellido_materno"]) if x)
+                           for p in parl})
+SIN_PARTIDO = {"Independientes", "Independiente", "Sin dato"}
+
+
+def _discolos(vp: dict) -> list[dict]:
+    """Parlamentarios que votaron distinto a la mayoría de su propio partido (si/no)."""
+    por_partido: dict[str, list] = defaultdict(list)
+    for pid, partido, op in vp.get("_individuales") or []:
+        if partido not in SIN_PARTIDO and op in ("si", "no"):
+            por_partido[partido].append((pid, op))
+    out = []
+    for partido, votos in por_partido.items():
+        c = Counter(op for _, op in votos)
+        if len(votos) < 3 or len(c) < 2:
+            continue
+        mayoria, n_mayoria = c.most_common(1)[0]
+        for pid, op in votos:
+            if op != mayoria:
+                out.append({"nombre": _NOMBRES.get(pid, pid), "partido": partido, "voto": op,
+                            "mayoria_del_partido": mayoria, "votos_mayoria": n_mayoria, "votos_en_contra_de_su_partido": len(votos) - n_mayoria})
+    return out
+
+
+def _jornada(dia: date, vots_camara: list[dict], items: dict) -> dict:
+    """Cuánto trabajaron: sesiones y horas en Sala, quiénes votaron, cuántos proyectos se votaron."""
+    ses = [s for s in camara.bajar_sesiones_anno(dia.year)
+           if s["fecha_inicio"] and s["fecha_inicio"].date() == dia and s["estado"] == "Celebrada"]
+    minutos = sum(int((s["fecha_termino"] - s["fecha_inicio"]).total_seconds() // 60) for s in ses if s["fecha_termino"])
+    votantes = set()
+    for v in vots_camara[:60]:  # voto a voto de las votaciones del día (tope de cortesía)
+        try:
+            votantes |= {x["votante"] for x in camara.bajar_votos(v["id_fuente"]) if x["opcion"] != "no_vota"}
+        except Exception as e:
+            log.warning("sin detalle de votación %s: %s", v["id_fuente"], e)
+    _cargar_diputados()
+    en_ejercicio = set(_COMPLETOS)
+    # asistencia oficial (la Cámara la publica con días de atraso; si no está, la lista es "no votaron")
+    asistencia: dict[str, str] = {}
+    for s in ses:
+        try:
+            for a in camara.bajar_asistencia(s["id_fuente"]):
+                if asistencia.get(a["parlamentario_id"]) != "Asiste":
+                    asistencia[a["parlamentario_id"]] = a["tipo"] or "Sin dato"
+        except Exception as e:
+            log.warning("sin asistencia de la sesión %s: %s", s["id"], e)
+    ausentes = sorted(({"nombre": _COMPLETOS.get(p, p), "partido": _PARTIDOS.get(p, "Sin dato"), "registro": tipo}
+                       for p, tipo in asistencia.items() if tipo != "Asiste"), key=lambda x: x["nombre"])
+    ficha = lambda pid: {"nombre": _COMPLETOS.get(pid, pid), "partido": _PARTIDOS.get(pid, "Sin dato")}
+    lista_votaron = sorted((ficha(p) for p in votantes & en_ejercicio), key=lambda x: x["nombre"])
+    lista_no = sorted((ficha(p) for p in en_ejercicio - votantes), key=lambda x: x["nombre"]) if votantes else []
+    return {
+        "camara": {
+            "lista_votaron": lista_votaron,
+            "lista_no_votaron": lista_no,
+            "asistencia_publicada": bool(asistencia),
+            "lista_ausentes": ausentes,
+            "diputados_ausentes": len(ausentes) if asistencia else None,
+            "sesiones": [{"numero": s["numero"], "tipo": s["tipo"], "inicio": s["fecha_inicio"].strftime("%H:%M"),
+                          "termino": s["fecha_termino"].strftime("%H:%M") if s["fecha_termino"] else None} for s in ses],
+            "horas_en_sala": minutos // 60, "minutos_en_sala_resto": minutos % 60, "minutos_en_sala_total": minutos,
+            "votaciones": len(vots_camara),
+            "proyectos_votados": len({v["boletin"] for v in vots_camara if v["boletin"]}),
+            "diputados_que_votaron": len(lista_votaron), "total_diputados": len(en_ejercicio),
+            "diputados_que_no_votaron_nunca": len(lista_no) if votantes else None,
+        },
+        "senado": {
+            "votaciones": sum(it.get("votaciones_del_dia", 0) for it in items.values() if it["camara"] == "senado"),
+            "proyectos_votados": sum(1 for it in items.values() if it["camara"] == "senado"),
+        },
+        "leyes_publicadas": sum(1 for it in items.values() if it.get("tipo") == "ley_publicada"),
+    }
 
 
 def _por_partido(vp: dict) -> list[dict]:
@@ -38,6 +119,9 @@ def _por_partido(vp: dict) -> list[dict]:
         if not _PARTIDOS:
             parl, _, _ = camara.bajar_diputados_actuales()
             _PARTIDOS.update({p["id"]: p["partido_actual"] or "Sin dato" for p in parl})
+            _NOMBRES.update({p["id"]: f"{p['nombre'].split()[0]} {p['apellido_paterno']}" for p in parl if p["nombre"]})
+            _COMPLETOS.update({p["id"]: " ".join(x for x in (p["nombre"], p["apellido_paterno"], p["apellido_materno"]) if x)
+                               for p in parl})
         votos = [(v["parlamentario_id"], v["opcion"]) for v in camara.bajar_votos(vp["_id"])]
         partido = lambda pid: _PARTIDOS.get(pid, "Sin dato")
     else:
@@ -47,6 +131,7 @@ def _por_partido(vp: dict) -> list[dict]:
             _PARTIDOS.update({senado.clave_nombre_senador(s): s["partido_actual"] or "Sin dato" for s in sen})
         votos = [(senado.clave_nombre_voto(v["votante"]), v["opcion"]) for v in vp.get("_votos") or []]
         partido = lambda k: _PARTIDOS.get(k, "Sin dato")
+    vp["_individuales"] = [(pid, partido(pid), op) for pid, op in votos]
     tabla: dict[str, dict] = {}
     for pid, op in votos:
         fila = tabla.setdefault(partido(pid), {"partido": partido(pid), "si": 0, "no": 0, "abstencion": 0})
@@ -158,7 +243,30 @@ def recolectar(dia: date, max_items: int = 4) -> dict:
                 vp["por_partido"] = _por_partido(vp)
             except Exception as e:
                 log.warning("sin votos por partido para %s: %s", it["id"], e)
-            for k in ("_camara", "_id", "_votos"):
+            vp["discolos"] = _discolos(vp)
+            for k in ("_camara", "_id", "_votos", "_individuales"):
                 vp.pop(k, None)
+    jornada = _jornada(dia, vots, items)
+    cahuines = []
+    for it in elegidos:
+        for d in (it.get("votacion_principal") or {}).get("discolos", []):
+            cahuines.append({"tipo": "voto_contra_su_partido", "boletin": it["boletin"], "titulo": it.get("titulo"),
+                             **d, "fuente": it["fuente"]})
+        for tr in it.get("ultimos_tramites") or []:
+            if tr["fecha"] == dia.isoformat() and "reserva de constitucionalidad" in (tr["descripcion"] or "").lower():
+                cahuines.append({"tipo": "reserva_de_constitucionalidad", "boletin": it["boletin"],
+                                 "titulo": it.get("titulo"), "detalle": tr["descripcion"], "fuente": it["fuente"]})
+    if jornada["camara"]["diputados_que_no_votaron_nunca"]:
+        cahuines.append({"tipo": "no_votaron", "cantidad": jornada["camara"]["diputados_que_no_votaron_nunca"],
+                         "detalle": "diputados que no votaron en ninguna votación del día", "fuente": "camara.cl"})
     log.info("%s: %d hechos encontrados, %d elegidos", dia, len(items), len(elegidos))
-    return {"fecha": dia.isoformat(), "items": elegidos, "total_hechos": len(items)}
+    return {"fecha": dia.isoformat(), "jornada": jornada, "cahuines": cahuines, "items": elegidos,
+            "total_hechos": len(items), "contexto": _contexto()}
+
+
+def _contexto() -> dict:
+    """Datos fijos verificados a mano (p. ej. la dieta parlamentaria), en guion/contexto.json."""
+    import json
+    from pathlib import Path
+    p = Path(__file__).with_name("contexto.json")
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
