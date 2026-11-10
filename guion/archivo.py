@@ -68,6 +68,7 @@ def escribir_md(ep: dict, guion: dict, destino: Path) -> None:
            "Edita el texto como quieras. Reglas:",
            "- Cada bloque empieza con una línea `## ...`: no la borres.",
            "- `titular:` es lo que sale escrito en pantalla.",
+           "- Para dejar un comentario, empieza la línea con `//` (no se lee en el video).",
            "- `…` es una pausa. `[[no_votaron]]` y `[[votaron]]` marcan cuándo aparece cada lista: muévelos, pero no los borres.",
            "- Cada número tiene que estar en los datos oficiales: " + destino.with_name(destino.stem + ".datos.md").name,
            "",
@@ -123,7 +124,8 @@ def leer_md(origen: Path) -> dict:
     guion = {"gancho": "", "jornada": "", "escenas": [], "cahuin": "", "cierre": "", "generado_por": "editado a mano"}
     for bloque in re.split(r"^## ", texto, flags=re.M)[1:]:
         cabecera, _, cuerpo = bloque.partition("\n")
-        lineas = [l for l in cuerpo.splitlines() if not l.lstrip().startswith(">")]
+        # ">" = datos de referencia, "//" = comentarios del editor: ninguno se lee en el video
+        lineas = [l for l in cuerpo.splitlines() if not l.lstrip().startswith((">", "//"))]
         titular = ""
         resto = []
         for l in lineas:
