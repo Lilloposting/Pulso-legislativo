@@ -152,14 +152,21 @@ def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_sig
     texto, marcas = _quitar_marcas(re.sub(r"\s+", " ", texto).strip())
     texto_previo = _quitar_marcas(texto_previo)[0] if texto_previo else None
     texto_siguiente = _quitar_marcas(texto_siguiente)[0] if texto_siguiente else None
-    if motor() == "elevenlabs":
-        palabras = _elevenlabs(texto, destino, texto_previo, texto_siguiente)
+    usado = motor()
+    if usado == "elevenlabs":
+        try:
+            palabras = _elevenlabs(texto, destino, texto_previo, texto_siguiente)
+        except RuntimeError as e:  # p. ej. 402: el plan gratis no permite voces de la Voice Library
+            import logging
+            logging.getLogger("pulso").warning("ElevenLabs no disponible (%s); uso edge-tts", str(e)[:160])
+            usado = "edge-tts"
+            palabras = asyncio.run(_edge(texto, destino))
     else:
         palabras = asyncio.run(_edge(texto, destino))
     palabras = censurar(marcar_frases(separar(palabras), texto))
     tiempos = {k: palabras[min(i, len(palabras) - 1)]["desde_ms"] for k, i in marcas.items() if palabras}
     return {"texto": texto, "audio": destino.name, "duracion_ms": int(MP3(destino).info.length * 1000),
-            "palabras": palabras, "marcas": tiempos, "motor": motor()}
+            "palabras": palabras, "marcas": tiempos, "motor": usado}
 
 
 def crear_pitido(destino: Path, segundos: float = 1.0, hz: int = 1000) -> None:
