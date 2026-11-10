@@ -7,7 +7,11 @@ const VOTO: Record<string, string> = { si: "a favor", no: "en contra", abstencio
 const texto = (c: TCahuin) => {
   if (c.tipo === "voto_contra_su_partido")
     return { titulo: c.nombre ?? "", cuerpo: `${c.partido}: votó ${VOTO[c.voto ?? ""] ?? c.voto} y su partido ${VOTO[c.mayoria_del_partido ?? ""] ?? c.mayoria_del_partido}` };
-  if (c.tipo === "reserva_de_constitucionalidad") return { titulo: "Reserva de constitucionalidad", cuerpo: c.detalle ?? "" };
+  if (c.tipo === "reserva_de_constitucionalidad")
+    return {
+      titulo: `${(c.detalle ?? "").replace(/^(El|La) diputad[oa] /, "").replace(/ formula reserva.*$/i, "") || "Reserva de constitucionalidad"}: reserva de constitucionalidad`,
+      cuerpo: "Dejó avisado que cree que la ley choca con la Constitución. Así puede pedir después que el Tribunal Constitucional la revise.",
+    };
   return { titulo: `${c.cantidad} no votaron`, cuerpo: c.detalle ?? "" };
 };
 
