@@ -17,9 +17,10 @@ import requests
 from mutagen.mp3 import MP3
 
 VOZ_EDGE = "es-CL-CatalinaNeural"  # mujer, Chile (respaldo)
+VELOCIDAD_EDGE = "+18%"  # ritmo de redes: rápido pero entendible
 ELEVEN_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voz}/with-timestamps"
 # Ajustes de voz: estabilidad baja = más natural y expresiva; style suave para un tono cálido y cercano.
-ELEVEN_AJUSTES = {"stability": 0.38, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True, "speed": 1.0}
+ELEVEN_AJUSTES = {"stability": 0.38, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True, "speed": 1.12}
 
 
 def motor() -> str:
@@ -71,7 +72,7 @@ async def _edge(texto: str, destino: Path) -> list[dict]:
 
     palabras = []
     with destino.open("wb") as f:
-        async for ch in edge_tts.Communicate(texto, VOZ_EDGE, boundary="WordBoundary").stream():
+        async for ch in edge_tts.Communicate(texto, VOZ_EDGE, rate=VELOCIDAD_EDGE, boundary="WordBoundary").stream():
             if ch["type"] == "audio":
                 f.write(ch["data"])
             elif ch["type"] == "WordBoundary":  # unidades de 100 ns
@@ -90,6 +91,38 @@ def _normal(p: str) -> str:
     return re.sub(r"[^a-zñ]", "", "".join(c for c in p if not unicodedata.combining(c)))
 
 
+def separar(palabras: list[dict]) -> list[dict]:
+    """La voz a veces junta dos palabras en una marca ("8 ctm"): se separan repartiendo el tiempo."""
+    out = []
+    for p in palabras:
+        partes = p["texto"].split()
+        if len(partes) <= 1:
+            out.append(p)
+            continue
+        total = sum(len(x) for x in partes)
+        t0, dur = p["desde_ms"], p["hasta_ms"] - p["desde_ms"]
+        for x in partes:
+            d = dur * len(x) / total
+            out.append({"texto": x, "desde_ms": int(t0), "hasta_ms": int(t0 + d)})
+            t0 += d
+    return out
+
+
+def marcar_frases(palabras: list[dict], texto: str) -> list[dict]:
+    """Marca la palabra que cierra una frase o una pausa (punto, coma, ?, !, :) según el texto original."""
+    cursor = 0
+    bajo = texto.lower()
+    for p in palabras:
+        i = bajo.find(p["texto"].lower(), cursor)
+        if i < 0:
+            p["fin_frase"] = False
+            continue
+        cursor = i + len(p["texto"])
+        resto = texto[cursor:cursor + 2]
+        p["fin_frase"] = bool(resto) and resto.lstrip(" ")[:1] in ".,;:?!…" if resto.strip() else True
+    return palabras
+
+
 def censurar(palabras: list[dict]) -> list[dict]:
     """Marca las palabras fuertes: el video les pone pitido y *** en subtítulos."""
     for p in palabras:
@@ -98,15 +131,35 @@ def censurar(palabras: list[dict]) -> list[dict]:
     return palabras
 
 
+_MARCA = re.compile(r"\[\[(\w+)\]\]")
+
+
+def _quitar_marcas(texto: str) -> tuple[str, dict[str, int]]:
+    """'[[votaron]]estos sí votaron' -> texto limpio + {marca: índice de la palabra que sigue}."""
+    marcas, limpio, pos = {}, [], 0
+    for m in _MARCA.finditer(texto):
+        antes = texto[pos:m.start()]
+        limpio.append(antes)
+        marcas[m.group(1)] = len(" ".join(limpio).split())
+        pos = m.end()
+    limpio.append(texto[pos:])
+    return re.sub(r"\s+", " ", " ".join(limpio)).strip(), marcas
+
+
 def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_siguiente: str | None = None) -> dict:
+    """Las marcas [[nombre]] del guion no se leen: indican en qué palabra cambia algo en pantalla."""
     destino.parent.mkdir(parents=True, exist_ok=True)
-    texto = re.sub(r"\s+", " ", texto).strip()
+    texto, marcas = _quitar_marcas(re.sub(r"\s+", " ", texto).strip())
+    texto_previo = _quitar_marcas(texto_previo)[0] if texto_previo else None
+    texto_siguiente = _quitar_marcas(texto_siguiente)[0] if texto_siguiente else None
     if motor() == "elevenlabs":
         palabras = _elevenlabs(texto, destino, texto_previo, texto_siguiente)
     else:
         palabras = asyncio.run(_edge(texto, destino))
+    palabras = censurar(marcar_frases(separar(palabras), texto))
+    tiempos = {k: palabras[min(i, len(palabras) - 1)]["desde_ms"] for k, i in marcas.items() if palabras}
     return {"texto": texto, "audio": destino.name, "duracion_ms": int(MP3(destino).info.length * 1000),
-            "palabras": censurar(palabras), "motor": motor()}
+            "palabras": palabras, "marcas": tiempos, "motor": motor()}
 
 
 def crear_pitido(destino: Path, segundos: float = 1.0, hz: int = 1000) -> None:

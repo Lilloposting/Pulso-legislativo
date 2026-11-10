@@ -21,8 +21,8 @@ export const color = {
 export const FPS = 30;
 export const ANCHO = 1080;
 export const ALTO = 1920;
-export const MARGEN_ESCENA = 12; // frames extra al final de cada escena
-export const MIN_INTRO = 5 * FPS;
+export const MARGEN_ESCENA = 4; // frames extra al final de cada escena (ritmo rápido)
+export const MIN_INTRO = Math.round(3.6 * FPS);
 
 export const nombreCamara = (c: string) =>
   c === "senado" ? "SENADO" : c === "camara" ? "CÁMARA DE DIPUTADAS Y DIPUTADOS" : "CONGRESO NACIONAL";

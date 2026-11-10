@@ -5,280 +5,664 @@
   {
    "tipo": "intro",
    "voz": {
-    "texto": "Hoy los diputados trabajaron 5 horas. ¿Hicieron algo por ti? Veamos.",
+    "texto": "Hoy los weones, perdón, los diputados, trabajaron 5 horas. Y si yo me voy antes de las seis, me descuentan plata. Porque yo marco tarjeta, weón. No como estos.",
     "audio": "episodios/2026-11-09/00-intro.mp3",
-    "duracion_ms": 6768,
+    "duracion_ms": 11736,
     "palabras": [
      {
       "texto": "Hoy",
-      "desde_ms": 100,
-      "hasta_ms": 237,
+      "desde_ms": 92,
+      "hasta_ms": 219,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "los",
-      "desde_ms": 262,
-      "hasta_ms": 387,
+      "desde_ms": 251,
+      "hasta_ms": 399,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "weones",
+      "desde_ms": 420,
+      "hasta_ms": 780,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "perdón",
+      "desde_ms": 1024,
+      "hasta_ms": 1374,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "los",
+      "desde_ms": 1596,
+      "hasta_ms": 1713,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "diputados",
-      "desde_ms": 400,
-      "hasta_ms": 950,
+      "desde_ms": 1734,
+      "hasta_ms": 2274,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "trabajaron",
-      "desde_ms": 1000,
-      "hasta_ms": 1537,
+      "desde_ms": 2507,
+      "hasta_ms": 2952,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "5 horas",
-      "desde_ms": 1562,
-      "hasta_ms": 2362,
+      "texto": "5",
+      "desde_ms": 2984,
+      "hasta_ms": 3102,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "Hicieron",
-      "desde_ms": 3250,
-      "hasta_ms": 3700,
+      "texto": "horas",
+      "desde_ms": 3102,
+      "hasta_ms": 3694,
+      "fin_frase": true,
       "censurada": false
      },
      {
-      "texto": "algo",
-      "desde_ms": 3712,
-      "hasta_ms": 3962,
+      "texto": "Y",
+      "desde_ms": 4438,
+      "hasta_ms": 4502,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "por",
-      "desde_ms": 4037,
-      "hasta_ms": 4150,
+      "texto": "si",
+      "desde_ms": 4533,
+      "hasta_ms": 4629,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "ti",
-      "desde_ms": 4250,
-      "hasta_ms": 4362,
+      "texto": "yo",
+      "desde_ms": 4671,
+      "hasta_ms": 4766,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "Veamos",
-      "desde_ms": 5262,
-      "hasta_ms": 5862,
+      "texto": "me",
+      "desde_ms": 4788,
+      "hasta_ms": 4862,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "voy",
+      "desde_ms": 4894,
+      "hasta_ms": 5063,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "antes",
+      "desde_ms": 5084,
+      "hasta_ms": 5328,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "de",
+      "desde_ms": 5349,
+      "hasta_ms": 5413,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "las",
+      "desde_ms": 5434,
+      "hasta_ms": 5540,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "seis",
+      "desde_ms": 5540,
+      "hasta_ms": 5836,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "me",
+      "desde_ms": 6059,
+      "hasta_ms": 6133,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "descuentan",
+      "desde_ms": 6165,
+      "hasta_ms": 6652,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "plata",
+      "desde_ms": 6663,
+      "hasta_ms": 6959,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "Porque",
+      "desde_ms": 7701,
+      "hasta_ms": 7934,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "yo",
+      "desde_ms": 7987,
+      "hasta_ms": 8082,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "marco",
+      "desde_ms": 8103,
+      "hasta_ms": 8389,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "tarjeta",
+      "desde_ms": 8453,
+      "hasta_ms": 8919,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "weón",
+      "desde_ms": 9152,
+      "hasta_ms": 9417,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "No",
+      "desde_ms": 10180,
+      "hasta_ms": 10328,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "como",
+      "desde_ms": 10381,
+      "hasta_ms": 10550,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "estos",
+      "desde_ms": 10593,
+      "hasta_ms": 10963,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {},
     "motor": "edge-tts"
    }
   },
   {
    "tipo": "jornada",
    "voz": {
-    "texto": "Estuvieron 5 horas y 5 minutos en la Sala y votaron 2 proyectos. Todos estos weones votaron. Y estos 8 ctm no votaron ni una vez. No sé si no fueron o se pajearon en la sala.",
+    "texto": "Ya, pero igual trabajan en otras cosas: tienen que leer weas y venir preparados. Entonces, ¿cómo no votái, ctm? Todos estos weones no votaron ni una wea en todo el día. O sea, ¿estái 5 horas en la Sala y ni siquiera votái? Y por si acaso, estos sí votaron. No sé si sabían qué, pero por lo menos votaron alguna wea.",
     "audio": "episodios/2026-11-09/01-jornada.mp3",
-    "duracion_ms": 13968,
+    "duracion_ms": 20928,
     "palabras": [
      {
-      "texto": "Estuvieron",
-      "desde_ms": 100,
-      "hasta_ms": 637,
+      "texto": "Ya",
+      "desde_ms": 92,
+      "hasta_ms": 314,
+      "fin_frase": true,
       "censurada": false
      },
      {
-      "texto": "5 horas",
-      "desde_ms": 662,
-      "hasta_ms": 1312,
+      "texto": "pero",
+      "desde_ms": 622,
+      "hasta_ms": 727,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "y",
-      "desde_ms": 1337,
-      "hasta_ms": 1362,
+      "texto": "igual",
+      "desde_ms": 749,
+      "hasta_ms": 950,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "5 minutos",
-      "desde_ms": 1400,
-      "hasta_ms": 2212,
+      "texto": "trabajan",
+      "desde_ms": 982,
+      "hasta_ms": 1331,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 2212,
-      "hasta_ms": 2262,
+      "desde_ms": 1342,
+      "hasta_ms": 1427,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "la",
-      "desde_ms": 2287,
-      "hasta_ms": 2400,
+      "texto": "otras",
+      "desde_ms": 1437,
+      "hasta_ms": 1691,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "Sala",
-      "desde_ms": 2412,
-      "hasta_ms": 2725,
+      "texto": "cosas",
+      "desde_ms": 1734,
+      "hasta_ms": 2052,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "tienen",
+      "desde_ms": 2359,
+      "hasta_ms": 2634,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "que",
+      "desde_ms": 2634,
+      "hasta_ms": 2698,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "leer",
+      "desde_ms": 2719,
+      "hasta_ms": 2952,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "weas",
+      "desde_ms": 2984,
+      "hasta_ms": 3270,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "y",
-      "desde_ms": 2775,
-      "hasta_ms": 2825,
+      "desde_ms": 3291,
+      "hasta_ms": 3312,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "votaron",
-      "desde_ms": 2862,
-      "hasta_ms": 3287,
+      "texto": "venir",
+      "desde_ms": 3333,
+      "hasta_ms": 3577,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "2 proyectos",
-      "desde_ms": 3350,
-      "hasta_ms": 4175,
+      "texto": "preparados",
+      "desde_ms": 3641,
+      "hasta_ms": 4213,
+      "fin_frase": true,
       "censurada": false
+     },
+     {
+      "texto": "Entonces",
+      "desde_ms": 4957,
+      "hasta_ms": 5529,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "cómo",
+      "desde_ms": 5762,
+      "hasta_ms": 5942,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "no",
+      "desde_ms": 5974,
+      "hasta_ms": 6069,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "votái",
+      "desde_ms": 6091,
+      "hasta_ms": 6461,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "ctm",
+      "desde_ms": 6652,
+      "hasta_ms": 7256,
+      "fin_frase": true,
+      "censurada": true
      },
      {
       "texto": "Todos",
-      "desde_ms": 5075,
-      "hasta_ms": 5412,
+      "desde_ms": 8019,
+      "hasta_ms": 8283,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "estos",
-      "desde_ms": 5412,
-      "hasta_ms": 5700,
+      "desde_ms": 8283,
+      "hasta_ms": 8527,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "weones",
-      "desde_ms": 5737,
-      "hasta_ms": 6075,
+      "desde_ms": 8548,
+      "hasta_ms": 8866,
+      "fin_frase": false,
       "censurada": false
-     },
-     {
-      "texto": "votaron",
-      "desde_ms": 6112,
-      "hasta_ms": 6587,
-      "censurada": false
-     },
-     {
-      "texto": "Y",
-      "desde_ms": 7475,
-      "hasta_ms": 7575,
-      "censurada": false
-     },
-     {
-      "texto": "estos",
-      "desde_ms": 7600,
-      "hasta_ms": 7950,
-      "censurada": false
-     },
-     {
-      "texto": "8 ctm",
-      "desde_ms": 7950,
-      "hasta_ms": 8725,
-      "censurada": true
      },
      {
       "texto": "no",
-      "desde_ms": 8762,
-      "hasta_ms": 8875,
+      "desde_ms": 8898,
+      "hasta_ms": 8993,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "votaron",
-      "desde_ms": 8900,
-      "hasta_ms": 9300,
+      "desde_ms": 9014,
+      "hasta_ms": 9343,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "ni",
-      "desde_ms": 9312,
-      "hasta_ms": 9412,
+      "desde_ms": 9343,
+      "hasta_ms": 9438,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "una",
-      "desde_ms": 9462,
-      "hasta_ms": 9637,
+      "desde_ms": 9480,
+      "hasta_ms": 9639,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "vez",
-      "desde_ms": 9662,
-      "hasta_ms": 9987,
+      "texto": "wea",
+      "desde_ms": 9671,
+      "hasta_ms": 9851,
+      "fin_frase": false,
       "censurada": false
-     },
-     {
-      "texto": "No",
-      "desde_ms": 10887,
-      "hasta_ms": 11075,
-      "censurada": false
-     },
-     {
-      "texto": "sé",
-      "desde_ms": 11100,
-      "hasta_ms": 11212,
-      "censurada": false
-     },
-     {
-      "texto": "si",
-      "desde_ms": 11237,
-      "hasta_ms": 11362,
-      "censurada": false
-     },
-     {
-      "texto": "no",
-      "desde_ms": 11387,
-      "hasta_ms": 11500,
-      "censurada": false
-     },
-     {
-      "texto": "fueron",
-      "desde_ms": 11537,
-      "hasta_ms": 11812,
-      "censurada": false
-     },
-     {
-      "texto": "o",
-      "desde_ms": 11825,
-      "hasta_ms": 11887,
-      "censurada": false
-     },
-     {
-      "texto": "se",
-      "desde_ms": 11900,
-      "hasta_ms": 12000,
-      "censurada": false
-     },
-     {
-      "texto": "pajearon",
-      "desde_ms": 12075,
-      "hasta_ms": 12487,
-      "censurada": true
      },
      {
       "texto": "en",
-      "desde_ms": 12500,
-      "hasta_ms": 12575,
+      "desde_ms": 9904,
+      "hasta_ms": 10031,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "todo",
+      "desde_ms": 10074,
+      "hasta_ms": 10233,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "el",
+      "desde_ms": 10264,
+      "hasta_ms": 10338,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "día",
+      "desde_ms": 10370,
+      "hasta_ms": 10593,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "O",
+      "desde_ms": 11345,
+      "hasta_ms": 11419,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "sea",
+      "desde_ms": 11451,
+      "hasta_ms": 11726,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "estái",
+      "desde_ms": 11959,
+      "hasta_ms": 12214,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "5",
+      "desde_ms": 12245,
+      "hasta_ms": 12340,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "horas",
+      "desde_ms": 12340,
+      "hasta_ms": 12817,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 12817,
+      "hasta_ms": 12870,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "la",
-      "desde_ms": 12600,
-      "hasta_ms": 12700,
+      "desde_ms": 12891,
+      "hasta_ms": 12987,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "sala",
-      "desde_ms": 12712,
-      "hasta_ms": 13050,
+      "texto": "Sala",
+      "desde_ms": 12997,
+      "hasta_ms": 13262,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 13305,
+      "hasta_ms": 13358,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "ni",
+      "desde_ms": 13368,
+      "hasta_ms": 13453,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "siquiera",
+      "desde_ms": 13485,
+      "hasta_ms": 13802,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "votái",
+      "desde_ms": 13824,
+      "hasta_ms": 14131,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "Y",
+      "desde_ms": 14872,
+      "hasta_ms": 14925,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "por",
+      "desde_ms": 14989,
+      "hasta_ms": 15095,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "si",
+      "desde_ms": 15116,
+      "hasta_ms": 15190,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "acaso",
+      "desde_ms": 15201,
+      "hasta_ms": 15603,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "estos",
+      "desde_ms": 15836,
+      "hasta_ms": 16091,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "sí",
+      "desde_ms": 16091,
+      "hasta_ms": 16165,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "votaron",
+      "desde_ms": 16186,
+      "hasta_ms": 16588,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "No",
+      "desde_ms": 17341,
+      "hasta_ms": 17499,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "sé",
+      "desde_ms": 17521,
+      "hasta_ms": 17627,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "si",
+      "desde_ms": 17648,
+      "hasta_ms": 17743,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "sabían",
+      "desde_ms": 17786,
+      "hasta_ms": 18156,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "qué",
+      "desde_ms": 18156,
+      "hasta_ms": 18273,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "pero",
+      "desde_ms": 18569,
+      "hasta_ms": 18686,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "por",
+      "desde_ms": 18760,
+      "hasta_ms": 18855,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "lo",
+      "desde_ms": 18877,
+      "hasta_ms": 18940,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "menos",
+      "desde_ms": 18961,
+      "hasta_ms": 19205,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "votaron",
+      "desde_ms": 19226,
+      "hasta_ms": 19565,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "alguna",
+      "desde_ms": 19576,
+      "hasta_ms": 19894,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "wea",
+      "desde_ms": 19915,
+      "hasta_ms": 20158,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {
+     "no_votaron": 8019,
+     "votaron": 15836
+    },
     "motor": "edge-tts"
    },
    "jornada": {
@@ -942,339 +1326,402 @@
    "voz": {
     "texto": "¿Qué hicieron hoy por Chile? Aprobaron en general el Presupuesto 2027, o sea, en qué se va a gastar la plata de todos el próximo año. Quedó 81 a favor y 63 en contra: Republicanos, UDI y RN a favor; Frente Amplio, PS y PC en contra. ¿Te cambia algo hoy? Todavía no, sigue su trámite.",
     "audio": "episodios/2026-11-09/02-noticia.mp3",
-    "duracion_ms": 23832,
+    "duracion_ms": 20208,
     "palabras": [
      {
       "texto": "Qué",
-      "desde_ms": 100,
-      "hasta_ms": 212,
+      "desde_ms": 92,
+      "hasta_ms": 187,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "hicieron",
-      "desde_ms": 225,
-      "hasta_ms": 662,
+      "desde_ms": 198,
+      "hasta_ms": 569,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "hoy",
-      "desde_ms": 675,
-      "hasta_ms": 812,
+      "desde_ms": 579,
+      "hasta_ms": 696,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "por",
-      "desde_ms": 900,
-      "hasta_ms": 1012,
+      "desde_ms": 770,
+      "hasta_ms": 865,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Chile",
-      "desde_ms": 1100,
-      "hasta_ms": 1400,
+      "desde_ms": 939,
+      "hasta_ms": 1194,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Aprobaron",
-      "desde_ms": 2300,
-      "hasta_ms": 2787,
+      "desde_ms": 1949,
+      "hasta_ms": 2362,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 2800,
-      "hasta_ms": 2912,
+      "desde_ms": 2372,
+      "hasta_ms": 2468,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "general",
-      "desde_ms": 2912,
-      "hasta_ms": 3325,
+      "desde_ms": 2468,
+      "hasta_ms": 2817,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 3325,
-      "hasta_ms": 3400,
+      "desde_ms": 2817,
+      "hasta_ms": 2881,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Presupuesto",
-      "desde_ms": 3462,
-      "hasta_ms": 4012,
+      "desde_ms": 2934,
+      "hasta_ms": 3400,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "2027",
-      "desde_ms": 4037,
-      "hasta_ms": 5075,
+      "desde_ms": 3421,
+      "hasta_ms": 4300,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "o",
-      "desde_ms": 5362,
-      "hasta_ms": 5437,
+      "desde_ms": 4544,
+      "hasta_ms": 4608,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "sea",
-      "desde_ms": 5475,
-      "hasta_ms": 5837,
+      "desde_ms": 4639,
+      "hasta_ms": 4947,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 6112,
-      "hasta_ms": 6275,
+      "desde_ms": 5180,
+      "hasta_ms": 5317,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "qué",
-      "desde_ms": 6287,
-      "hasta_ms": 6362,
+      "desde_ms": 5328,
+      "hasta_ms": 5391,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "se",
-      "desde_ms": 6387,
-      "hasta_ms": 6512,
+      "desde_ms": 5413,
+      "hasta_ms": 5519,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "va",
-      "desde_ms": 6550,
-      "hasta_ms": 6687,
+      "desde_ms": 5550,
+      "hasta_ms": 5667,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 6712,
-      "hasta_ms": 6725,
+      "desde_ms": 5688,
+      "hasta_ms": 5699,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "gastar",
-      "desde_ms": 6775,
-      "hasta_ms": 7162,
+      "desde_ms": 5741,
+      "hasta_ms": 6069,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "la",
-      "desde_ms": 7175,
-      "hasta_ms": 7250,
+      "desde_ms": 6080,
+      "hasta_ms": 6144,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "plata",
-      "desde_ms": 7350,
-      "hasta_ms": 7612,
+      "desde_ms": 6228,
+      "hasta_ms": 6451,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "de",
-      "desde_ms": 7637,
-      "hasta_ms": 7750,
+      "desde_ms": 6472,
+      "hasta_ms": 6567,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "todos",
-      "desde_ms": 7875,
-      "hasta_ms": 8212,
+      "desde_ms": 6673,
+      "hasta_ms": 6959,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 8212,
-      "hasta_ms": 8287,
+      "desde_ms": 6959,
+      "hasta_ms": 7023,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "próximo",
-      "desde_ms": 8375,
-      "hasta_ms": 8800,
+      "desde_ms": 7097,
+      "hasta_ms": 7457,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "año",
-      "desde_ms": 8837,
-      "hasta_ms": 9112,
+      "desde_ms": 7489,
+      "hasta_ms": 7722,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Quedó",
-      "desde_ms": 10012,
-      "hasta_ms": 10262,
+      "desde_ms": 8485,
+      "hasta_ms": 8697,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "81 a",
-      "desde_ms": 10275,
-      "hasta_ms": 10937,
-      "censurada": false
-     },
-     {
-      "texto": "favor",
-      "desde_ms": 10962,
-      "hasta_ms": 11287,
-      "censurada": false
-     },
-     {
-      "texto": "y",
-      "desde_ms": 11300,
-      "hasta_ms": 11337,
-      "censurada": false
-     },
-     {
-      "texto": "63",
-      "desde_ms": 11375,
-      "hasta_ms": 12150,
-      "censurada": false
-     },
-     {
-      "texto": "en",
-      "desde_ms": 12150,
-      "hasta_ms": 12300,
-      "censurada": false
-     },
-     {
-      "texto": "contra",
-      "desde_ms": 12300,
-      "hasta_ms": 12712,
-      "censurada": false
-     },
-     {
-      "texto": "Republicanos",
-      "desde_ms": 12950,
-      "hasta_ms": 13775,
-      "censurada": false
-     },
-     {
-      "texto": "UDI",
-      "desde_ms": 14062,
-      "hasta_ms": 14287,
-      "censurada": false
-     },
-     {
-      "texto": "y",
-      "desde_ms": 14337,
-      "hasta_ms": 14437,
-      "censurada": false
-     },
-     {
-      "texto": "RN",
-      "desde_ms": 14450,
-      "hasta_ms": 14912,
+      "texto": "81",
+      "desde_ms": 8707,
+      "hasta_ms": 9081,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 14925,
-      "hasta_ms": 14975,
+      "desde_ms": 9081,
+      "hasta_ms": 9269,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "favor",
-      "desde_ms": 15000,
-      "hasta_ms": 15362,
-      "censurada": false
-     },
-     {
-      "texto": "Frente",
-      "desde_ms": 15650,
-      "hasta_ms": 15987,
-      "censurada": false
-     },
-     {
-      "texto": "Amplio",
-      "desde_ms": 16025,
-      "hasta_ms": 16425,
-      "censurada": false
-     },
-     {
-      "texto": "PS",
-      "desde_ms": 16725,
-      "hasta_ms": 17175,
+      "desde_ms": 9290,
+      "hasta_ms": 9565,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "y",
-      "desde_ms": 17212,
-      "hasta_ms": 17275,
+      "desde_ms": 9576,
+      "hasta_ms": 9608,
+      "fin_frase": false,
       "censurada": false
      },
      {
-      "texto": "PC",
-      "desde_ms": 17375,
-      "hasta_ms": 17662,
+      "texto": "63",
+      "desde_ms": 9639,
+      "hasta_ms": 10296,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 17687,
-      "hasta_ms": 17825,
+      "desde_ms": 10296,
+      "hasta_ms": 10423,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "contra",
-      "desde_ms": 17825,
-      "hasta_ms": 18212,
+      "desde_ms": 10423,
+      "hasta_ms": 10773,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "Republicanos",
+      "desde_ms": 10974,
+      "hasta_ms": 11673,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "UDI",
+      "desde_ms": 11917,
+      "hasta_ms": 12108,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 12150,
+      "hasta_ms": 12235,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "RN",
+      "desde_ms": 12245,
+      "hasta_ms": 12637,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "a",
+      "desde_ms": 12648,
+      "hasta_ms": 12690,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "favor",
+      "desde_ms": 12711,
+      "hasta_ms": 13019,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "Frente",
+      "desde_ms": 13262,
+      "hasta_ms": 13548,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "Amplio",
+      "desde_ms": 13580,
+      "hasta_ms": 13919,
+      "fin_frase": true,
+      "censurada": false
+     },
+     {
+      "texto": "PS",
+      "desde_ms": 14173,
+      "hasta_ms": 14555,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "y",
+      "desde_ms": 14586,
+      "hasta_ms": 14639,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "PC",
+      "desde_ms": 14724,
+      "hasta_ms": 14968,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "en",
+      "desde_ms": 14989,
+      "hasta_ms": 15105,
+      "fin_frase": false,
+      "censurada": false
+     },
+     {
+      "texto": "contra",
+      "desde_ms": 15105,
+      "hasta_ms": 15434,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Te",
-      "desde_ms": 19100,
-      "hasta_ms": 19187,
+      "desde_ms": 16186,
+      "hasta_ms": 16260,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "cambia",
-      "desde_ms": 19262,
-      "hasta_ms": 19575,
+      "desde_ms": 16324,
+      "hasta_ms": 16588,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "algo",
-      "desde_ms": 19625,
-      "hasta_ms": 19900,
+      "desde_ms": 16631,
+      "hasta_ms": 16864,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "hoy",
-      "desde_ms": 19937,
-      "hasta_ms": 20137,
+      "desde_ms": 16896,
+      "hasta_ms": 17065,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Todavía",
-      "desde_ms": 21037,
-      "hasta_ms": 21500,
+      "desde_ms": 17828,
+      "hasta_ms": 18220,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "no",
-      "desde_ms": 21537,
-      "hasta_ms": 21725,
+      "desde_ms": 18252,
+      "hasta_ms": 18411,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "sigue",
-      "desde_ms": 22000,
-      "hasta_ms": 22300,
+      "desde_ms": 18644,
+      "hasta_ms": 18898,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "su",
-      "desde_ms": 22325,
-      "hasta_ms": 22437,
+      "desde_ms": 18919,
+      "hasta_ms": 19014,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "trámite",
-      "desde_ms": 22512,
-      "hasta_ms": 22912,
+      "desde_ms": 19078,
+      "hasta_ms": 19417,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {},
     "motor": "edge-tts"
    },
    "titular": "Presupuesto 2027: pasó la primera votación",
@@ -1476,291 +1923,339 @@
    "voz": {
     "texto": "Lo otro fue educación pública: un ajuste a cómo se traspasan los colegios a los nuevos Servicios Locales. Lo aprobaron sin cambios y vuelve al Senado. ¿Esto en qué me afecta? Si tu hijo va a un colegio público, quizás en algo. Si no, ni una wea.",
     "audio": "episodios/2026-11-09/03-noticia.mp3",
-    "duracion_ms": 17904,
+    "duracion_ms": 15192,
     "palabras": [
      {
       "texto": "Lo",
-      "desde_ms": 100,
-      "hasta_ms": 262,
+      "desde_ms": 92,
+      "hasta_ms": 230,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "otro",
-      "desde_ms": 275,
-      "hasta_ms": 512,
+      "desde_ms": 240,
+      "hasta_ms": 441,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "fue",
-      "desde_ms": 537,
-      "hasta_ms": 675,
+      "desde_ms": 463,
+      "hasta_ms": 579,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "educación",
-      "desde_ms": 687,
-      "hasta_ms": 1200,
+      "desde_ms": 590,
+      "hasta_ms": 1024,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "pública",
-      "desde_ms": 1212,
-      "hasta_ms": 1650,
+      "desde_ms": 1035,
+      "hasta_ms": 1405,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "un",
-      "desde_ms": 1937,
-      "hasta_ms": 2037,
+      "desde_ms": 1649,
+      "hasta_ms": 1734,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "ajuste",
-      "desde_ms": 2050,
-      "hasta_ms": 2462,
+      "desde_ms": 1744,
+      "hasta_ms": 2094,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 2462,
-      "hasta_ms": 2500,
+      "desde_ms": 2094,
+      "hasta_ms": 2126,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "cómo",
-      "desde_ms": 2575,
-      "hasta_ms": 2750,
+      "desde_ms": 2189,
+      "hasta_ms": 2338,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "se",
-      "desde_ms": 2762,
-      "hasta_ms": 2862,
+      "desde_ms": 2348,
+      "hasta_ms": 2433,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "traspasan",
-      "desde_ms": 2937,
-      "hasta_ms": 3425,
+      "desde_ms": 2497,
+      "hasta_ms": 2910,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "los",
-      "desde_ms": 3462,
-      "hasta_ms": 3575,
+      "desde_ms": 2941,
+      "hasta_ms": 3037,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "colegios",
-      "desde_ms": 3625,
-      "hasta_ms": 4125,
+      "desde_ms": 3079,
+      "hasta_ms": 3503,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 4125,
-      "hasta_ms": 4175,
+      "desde_ms": 3503,
+      "hasta_ms": 3545,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "los",
-      "desde_ms": 4187,
-      "hasta_ms": 4362,
+      "desde_ms": 3556,
+      "hasta_ms": 3704,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "nuevos",
-      "desde_ms": 4387,
-      "hasta_ms": 4712,
+      "desde_ms": 3725,
+      "hasta_ms": 4001,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Servicios",
-      "desde_ms": 4712,
-      "hasta_ms": 5187,
+      "desde_ms": 4001,
+      "hasta_ms": 4403,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Locales",
-      "desde_ms": 5212,
-      "hasta_ms": 5800,
+      "desde_ms": 4425,
+      "hasta_ms": 4922,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Lo",
-      "desde_ms": 6700,
-      "hasta_ms": 6800,
+      "desde_ms": 5677,
+      "hasta_ms": 5762,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "aprobaron",
-      "desde_ms": 6800,
-      "hasta_ms": 7287,
+      "desde_ms": 5762,
+      "hasta_ms": 6175,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "sin",
-      "desde_ms": 7312,
-      "hasta_ms": 7537,
+      "desde_ms": 6197,
+      "hasta_ms": 6387,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "cambios",
-      "desde_ms": 7550,
-      "hasta_ms": 7937,
+      "desde_ms": 6398,
+      "hasta_ms": 6726,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "y",
-      "desde_ms": 7962,
-      "hasta_ms": 7987,
+      "desde_ms": 6747,
+      "hasta_ms": 6769,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "vuelve",
-      "desde_ms": 8037,
-      "hasta_ms": 8312,
+      "desde_ms": 6811,
+      "hasta_ms": 7044,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "al",
-      "desde_ms": 8325,
-      "hasta_ms": 8437,
+      "desde_ms": 7055,
+      "hasta_ms": 7150,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Senado",
-      "desde_ms": 8450,
-      "hasta_ms": 8875,
+      "desde_ms": 7161,
+      "hasta_ms": 7521,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Esto",
-      "desde_ms": 9762,
-      "hasta_ms": 10012,
+      "desde_ms": 8273,
+      "hasta_ms": 8485,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 10025,
-      "hasta_ms": 10150,
+      "desde_ms": 8495,
+      "hasta_ms": 8601,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "qué",
-      "desde_ms": 10150,
-      "hasta_ms": 10225,
+      "desde_ms": 8601,
+      "hasta_ms": 8665,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "me",
-      "desde_ms": 10250,
-      "hasta_ms": 10325,
+      "desde_ms": 8686,
+      "hasta_ms": 8749,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "afecta",
-      "desde_ms": 10337,
-      "hasta_ms": 10812,
+      "desde_ms": 8760,
+      "hasta_ms": 9163,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Si",
-      "desde_ms": 11700,
-      "hasta_ms": 11862,
+      "desde_ms": 9915,
+      "hasta_ms": 10052,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "tu",
-      "desde_ms": 11950,
-      "hasta_ms": 12025,
+      "desde_ms": 10127,
+      "hasta_ms": 10190,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "hijo",
-      "desde_ms": 12062,
-      "hasta_ms": 12300,
+      "desde_ms": 10222,
+      "hasta_ms": 10423,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "va",
-      "desde_ms": 12337,
-      "hasta_ms": 12487,
+      "desde_ms": 10455,
+      "hasta_ms": 10582,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 12512,
-      "hasta_ms": 12525,
+      "desde_ms": 10603,
+      "hasta_ms": 10614,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "un",
-      "desde_ms": 12575,
-      "hasta_ms": 12737,
+      "desde_ms": 10656,
+      "hasta_ms": 10794,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "colegio",
-      "desde_ms": 12737,
-      "hasta_ms": 13112,
+      "desde_ms": 10794,
+      "hasta_ms": 11112,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "público",
-      "desde_ms": 13200,
-      "hasta_ms": 13625,
+      "desde_ms": 11186,
+      "hasta_ms": 11546,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "quizás",
-      "desde_ms": 13912,
-      "hasta_ms": 14287,
+      "desde_ms": 11790,
+      "hasta_ms": 12108,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 14300,
-      "hasta_ms": 14375,
+      "desde_ms": 12118,
+      "hasta_ms": 12182,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "algo",
-      "desde_ms": 14400,
-      "hasta_ms": 14712,
+      "desde_ms": 12203,
+      "hasta_ms": 12468,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Si",
-      "desde_ms": 15612,
-      "hasta_ms": 15800,
+      "desde_ms": 13232,
+      "hasta_ms": 13391,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "no",
-      "desde_ms": 15825,
-      "hasta_ms": 16037,
+      "desde_ms": 13412,
+      "hasta_ms": 13592,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "ni",
-      "desde_ms": 16300,
-      "hasta_ms": 16462,
+      "desde_ms": 13815,
+      "hasta_ms": 13953,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "una",
-      "desde_ms": 16500,
-      "hasta_ms": 16687,
+      "desde_ms": 13984,
+      "hasta_ms": 14143,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "wea",
-      "desde_ms": 16712,
-      "hasta_ms": 17000,
+      "desde_ms": 14165,
+      "hasta_ms": 14408,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {},
     "motor": "edge-tts"
    },
    "titular": "Educación pública: ajustan el traspaso",
@@ -1976,267 +2471,311 @@
    "voz": {
     "texto": "Y el cahuín: Cristian Mella fue el único DC que votó distinto a su partido en educación. En el Presupuesto, 3 del PDG se descolgaron de los otros 9. Y Emilia Schneider dejó reserva de constitucionalidad: esto podría terminar en el Tribunal Constitucional.",
     "audio": "episodios/2026-11-09/04-cahuin.mp3",
-    "duracion_ms": 17424,
+    "duracion_ms": 14760,
     "palabras": [
      {
       "texto": "Y",
-      "desde_ms": 100,
-      "hasta_ms": 187,
+      "desde_ms": 92,
+      "hasta_ms": 166,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 187,
-      "hasta_ms": 300,
+      "desde_ms": 166,
+      "hasta_ms": 261,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "cahuín",
-      "desde_ms": 350,
-      "hasta_ms": 762,
+      "desde_ms": 304,
+      "hasta_ms": 653,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Cristian",
-      "desde_ms": 1037,
-      "hasta_ms": 1425,
+      "desde_ms": 886,
+      "hasta_ms": 1215,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Mella",
-      "desde_ms": 1462,
-      "hasta_ms": 1712,
+      "desde_ms": 1247,
+      "hasta_ms": 1458,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "fue",
-      "desde_ms": 1737,
-      "hasta_ms": 1887,
+      "desde_ms": 1480,
+      "hasta_ms": 1607,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 1950,
-      "hasta_ms": 2012,
+      "desde_ms": 1660,
+      "hasta_ms": 1713,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "único",
-      "desde_ms": 2025,
-      "hasta_ms": 2362,
+      "desde_ms": 1723,
+      "hasta_ms": 2009,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "DC",
-      "desde_ms": 2387,
-      "hasta_ms": 2650,
+      "desde_ms": 2030,
+      "hasta_ms": 2253,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "que",
-      "desde_ms": 2737,
-      "hasta_ms": 2812,
+      "desde_ms": 2327,
+      "hasta_ms": 2391,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "votó",
-      "desde_ms": 2850,
-      "hasta_ms": 3112,
+      "desde_ms": 2422,
+      "hasta_ms": 2645,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "distinto",
-      "desde_ms": 3150,
-      "hasta_ms": 3625,
+      "desde_ms": 2677,
+      "hasta_ms": 3079,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 3625,
-      "hasta_ms": 3675,
+      "desde_ms": 3079,
+      "hasta_ms": 3122,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "su",
-      "desde_ms": 3687,
-      "hasta_ms": 3787,
+      "desde_ms": 3132,
+      "hasta_ms": 3217,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "partido",
-      "desde_ms": 3850,
-      "hasta_ms": 4262,
+      "desde_ms": 3270,
+      "hasta_ms": 3619,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 4287,
-      "hasta_ms": 4350,
+      "desde_ms": 3641,
+      "hasta_ms": 3694,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "educación",
-      "desde_ms": 4375,
-      "hasta_ms": 4962,
+      "desde_ms": 3715,
+      "hasta_ms": 4213,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "En",
-      "desde_ms": 5850,
-      "hasta_ms": 5962,
+      "desde_ms": 4957,
+      "hasta_ms": 5052,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 5975,
-      "hasta_ms": 6075,
+      "desde_ms": 5063,
+      "hasta_ms": 5148,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Presupuesto",
-      "desde_ms": 6137,
-      "hasta_ms": 6787,
+      "desde_ms": 5201,
+      "hasta_ms": 5752,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "3",
-      "desde_ms": 7125,
-      "hasta_ms": 7325,
+      "desde_ms": 6038,
+      "hasta_ms": 6207,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "del",
-      "desde_ms": 7337,
-      "hasta_ms": 7462,
+      "desde_ms": 6218,
+      "hasta_ms": 6324,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "PDG",
-      "desde_ms": 7550,
-      "hasta_ms": 7912,
+      "desde_ms": 6398,
+      "hasta_ms": 6705,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "se",
-      "desde_ms": 7937,
-      "hasta_ms": 8062,
+      "desde_ms": 6726,
+      "hasta_ms": 6832,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "descolgaron",
-      "desde_ms": 8087,
-      "hasta_ms": 8687,
+      "desde_ms": 6853,
+      "hasta_ms": 7362,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "de",
-      "desde_ms": 8737,
-      "hasta_ms": 8787,
+      "desde_ms": 7404,
+      "hasta_ms": 7447,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "los",
-      "desde_ms": 8812,
-      "hasta_ms": 9000,
+      "desde_ms": 7468,
+      "hasta_ms": 7627,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "otros",
-      "desde_ms": 9000,
-      "hasta_ms": 9300,
+      "desde_ms": 7627,
+      "hasta_ms": 7881,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "9",
-      "desde_ms": 9325,
-      "hasta_ms": 9625,
+      "desde_ms": 7902,
+      "hasta_ms": 8156,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Y",
-      "desde_ms": 10512,
-      "hasta_ms": 10600,
+      "desde_ms": 8908,
+      "hasta_ms": 8983,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Emilia",
-      "desde_ms": 10612,
-      "hasta_ms": 10987,
+      "desde_ms": 8993,
+      "hasta_ms": 9311,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Schneider",
-      "desde_ms": 11012,
-      "hasta_ms": 11487,
+      "desde_ms": 9332,
+      "hasta_ms": 9735,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "dejó",
-      "desde_ms": 11525,
-      "hasta_ms": 11787,
+      "desde_ms": 9766,
+      "hasta_ms": 9989,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "reserva",
-      "desde_ms": 11800,
-      "hasta_ms": 12237,
+      "desde_ms": 10000,
+      "hasta_ms": 10370,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "de",
-      "desde_ms": 12262,
-      "hasta_ms": 12337,
+      "desde_ms": 10391,
+      "hasta_ms": 10455,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "constitucionalidad",
-      "desde_ms": 12400,
-      "hasta_ms": 13462,
+      "desde_ms": 10508,
+      "hasta_ms": 11408,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "esto",
-      "desde_ms": 13750,
-      "hasta_ms": 13987,
+      "desde_ms": 11652,
+      "hasta_ms": 11853,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "podría",
-      "desde_ms": 14062,
-      "hasta_ms": 14412,
+      "desde_ms": 11917,
+      "hasta_ms": 12214,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "terminar",
-      "desde_ms": 14487,
-      "hasta_ms": 14900,
+      "desde_ms": 12277,
+      "hasta_ms": 12627,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 14912,
-      "hasta_ms": 15000,
+      "desde_ms": 12637,
+      "hasta_ms": 12711,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "el",
-      "desde_ms": 15025,
-      "hasta_ms": 15150,
+      "desde_ms": 12733,
+      "hasta_ms": 12838,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Tribunal",
-      "desde_ms": 15187,
-      "hasta_ms": 15612,
+      "desde_ms": 12870,
+      "hasta_ms": 13230,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "Constitucional",
-      "desde_ms": 15675,
-      "hasta_ms": 16537,
+      "desde_ms": 13283,
+      "hasta_ms": 14014,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {},
     "motor": "edge-tts"
    },
    "cahuines": [
@@ -2308,93 +2847,108 @@
    "voz": {
     "texto": "¿Avanzaron proyectos importantes? Uno grande, pero a medias. Las fuentes están en la descripción.",
     "audio": "episodios/2026-11-09/05-cierre.mp3",
-    "duracion_ms": 8112,
+    "duracion_ms": 6888,
     "palabras": [
      {
       "texto": "Avanzaron",
-      "desde_ms": 100,
-      "hasta_ms": 687,
+      "desde_ms": 92,
+      "hasta_ms": 590,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "proyectos",
-      "desde_ms": 700,
-      "hasta_ms": 1212,
+      "desde_ms": 600,
+      "hasta_ms": 1035,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "importantes",
-      "desde_ms": 1237,
-      "hasta_ms": 2000,
+      "desde_ms": 1056,
+      "hasta_ms": 1702,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Uno",
-      "desde_ms": 2887,
-      "hasta_ms": 3087,
+      "desde_ms": 2450,
+      "hasta_ms": 2620,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "grande",
-      "desde_ms": 3125,
-      "hasta_ms": 3500,
+      "desde_ms": 2652,
+      "hasta_ms": 2969,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "pero",
-      "desde_ms": 3800,
-      "hasta_ms": 3962,
+      "desde_ms": 3224,
+      "hasta_ms": 3361,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "a",
-      "desde_ms": 3962,
-      "hasta_ms": 4025,
+      "desde_ms": 3361,
+      "hasta_ms": 3414,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "medias",
-      "desde_ms": 4050,
-      "hasta_ms": 4562,
+      "desde_ms": 3436,
+      "hasta_ms": 3870,
+      "fin_frase": true,
       "censurada": false
      },
      {
       "texto": "Las",
-      "desde_ms": 5450,
-      "hasta_ms": 5637,
+      "desde_ms": 4618,
+      "hasta_ms": 4777,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "fuentes",
-      "desde_ms": 5662,
-      "hasta_ms": 6037,
+      "desde_ms": 4798,
+      "hasta_ms": 5116,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "están",
-      "desde_ms": 6037,
-      "hasta_ms": 6325,
+      "desde_ms": 5116,
+      "hasta_ms": 5360,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "en",
-      "desde_ms": 6337,
-      "hasta_ms": 6425,
+      "desde_ms": 5370,
+      "hasta_ms": 5444,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "la",
-      "desde_ms": 6450,
-      "hasta_ms": 6525,
+      "desde_ms": 5466,
+      "hasta_ms": 5529,
+      "fin_frase": false,
       "censurada": false
      },
      {
       "texto": "descripción",
-      "desde_ms": 6550,
-      "hasta_ms": 7212,
+      "desde_ms": 5550,
+      "hasta_ms": 6112,
+      "fin_frase": true,
       "censurada": false
      }
     ],
+    "marcas": {},
     "motor": "edge-tts"
    }
   }

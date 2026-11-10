@@ -15,13 +15,13 @@ const marcas = (palabras: Palabra[], fps: number) => {
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
-const Cifra: React.FC<{ valor: string; etiqueta: string; desde: number }> = ({ valor, etiqueta, desde }) => {
+const Cifra: React.FC<{ valor: string; etiqueta: string; desde: number; tono?: string }> = ({ valor, etiqueta, desde, tono }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - desde, fps, config: { damping: 14 } });
   return (
     <div style={{ opacity: s, transform: `translateY(${(1 - s) * 40}px)`, textAlign: "center" }}>
-      <div style={{ fontFamily: fuenteTitulos, fontWeight: 900, fontSize: 120, color: color.blanco, lineHeight: 1 }}>{valor}</div>
+      <div style={{ fontFamily: fuenteTitulos, fontWeight: 900, fontSize: 120, color: tono ?? color.blanco, lineHeight: 1 }}>{valor}</div>
       <div style={{ fontFamily: fuenteTexto, fontSize: 34, color: color.gris, marginTop: 10 }}>{etiqueta}</div>
     </div>
   );
@@ -36,7 +36,8 @@ const Lista: React.FC<{
   hasta: number;
   columnas: number;
   nota?: string;
-}> = ({ titulo, tono, personas, desde, hasta, columnas, nota }) => {
+  rapido?: boolean;
+}> = ({ titulo, tono, personas, desde, hasta, columnas, nota, rapido }) => {
   const frame = useCurrentFrame();
   const visible = frame >= desde && frame < hasta;
   if (!visible) return null;
@@ -45,7 +46,8 @@ const Lista: React.FC<{
   const filas = Math.ceil(personas.length / columnas);
   const altoLista = filas * alto_fila;
   const ventana = 1040;
-  const desplazamiento = interpolate(frame, [desde + 10, hasta - 6], [0, Math.max(0, altoLista - ventana)], clamp);
+  const recorrido = Math.max(12, Math.min(hasta - desde - 4, rapido ? 55 : 80));
+  const desplazamiento = interpolate(frame, [desde + 3, desde + 3 + recorrido], [0, Math.max(0, altoLista - ventana)], clamp);
   const entrada = interpolate(frame, [desde, desde + 6], [0, 1], clamp);
   return (
     <AbsoluteFill style={{ padding: "330px 60px 0", opacity: entrada }}>
@@ -72,15 +74,27 @@ const Lista: React.FC<{
   );
 };
 
-export const Jornada: React.FC<{ jornada: TJornada; palabras: Palabra[] }> = ({ jornada, palabras }) => {
+export const Jornada: React.FC<{ jornada: TJornada; palabras: Palabra[]; cues?: Record<string, number> }> = ({
+  jornada,
+  palabras,
+  cues,
+}) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
   const c = jornada.camara;
-  const [m1, m2] = marcas(palabras, fps);
-  const fin1 = m1 ?? Math.round(durationInFrames * 0.3);
-  const fin2 = m2 && m2 > fin1 + fps ? m2 : Math.round(fin1 + (durationInFrames - fin1) * 0.5);
   const faltaron = c.asistencia_publicada;
   const segunda = faltaron ? c.lista_ausentes : c.lista_no_votaron;
+  const aFrame = (ms?: number) => (ms === undefined ? null : Math.round((ms / 1000) * fps));
+  // Marcas explícitas del guion ([[votaron]] / [[no_votaron]]); si no hay, la heurística antigua.
+  const [h1, h2] = marcas(palabras, fps);
+  const inicioVotaron = aFrame(cues?.votaron) ?? h1 ?? Math.round(durationInFrames * 0.3);
+  const inicioNo = aFrame(cues?.no_votaron ?? cues?.faltaron) ?? h2 ?? Math.round(durationInFrames * 0.6);
+  const durNo = Math.round(fps * (segunda.length > 12 ? 4.5 : 3.3));
+  const durSi = Math.round(fps * 2.6);
+  const finVotaron = Math.min(durationInFrames, inicioVotaron + durSi, inicioNo > inicioVotaron ? inicioNo : Infinity);
+  const finNo = Math.min(durationInFrames, inicioNo + durNo, inicioVotaron > inicioNo ? inicioVotaron : Infinity);
+  const fin1 = Math.min(inicioVotaron, inicioNo);
+  const fin3 = Math.max(finVotaron, finNo);
   const tiempo = c.minutos_en_sala_total
     ? `${c.horas_en_sala} h ${String(c.minutos_en_sala_resto).padStart(2, "0")} min`
     : "0 h";
@@ -98,8 +112,8 @@ export const Jornada: React.FC<{ jornada: TJornada; palabras: Palabra[] }> = ({ 
         <AbsoluteFill style={{ justifyContent: "center", gap: 70, paddingBottom: 200 }}>
           <Cifra valor={tiempo} etiqueta="en la Sala de la Cámara" desde={4} />
           <div style={{ display: "flex", justifyContent: "space-around" }}>
-            <Cifra valor={String(c.proyectos_votados)} etiqueta="proyectos votados" desde={12} />
-            <Cifra valor={String(c.votaciones)} etiqueta="votaciones" desde={18} />
+            <Cifra valor={String(c.proyectos_votados)} etiqueta="proyectos votados" desde={6} />
+            <Cifra valor={String(c.votaciones)} etiqueta="votaciones" desde={9} />
           </div>
           <div style={{ opacity: interpolate(frame, [20, 30], [0, 1], clamp), textAlign: "center", fontFamily: fuenteTexto, color: color.gris, fontSize: 28 }}>
             {c.sesiones.map((s) => `Sesión ${s.numero} (${s.tipo.toLowerCase()}): ${s.inicio}–${s.termino ?? "?"}`).join("  ·  ")}
@@ -107,16 +121,29 @@ export const Jornada: React.FC<{ jornada: TJornada; palabras: Palabra[] }> = ({ 
         </AbsoluteFill>
       ) : null}
 
-      <Lista titulo="VOTARON" tono={color.favor} personas={c.lista_votaron} desde={fin1} hasta={fin2} columnas={3} />
+      <Lista titulo={inicioVotaron > inicioNo ? "ESTOS SÍ VOTARON" : "VOTARON"} tono={color.favor} personas={c.lista_votaron} desde={inicioVotaron} hasta={finVotaron} columnas={3} rapido />
       <Lista
         titulo={faltaron ? "FALTARON" : "NO VOTARON"}
         tono={color.contra}
         personas={segunda}
-        desde={fin2}
-        hasta={durationInFrames}
+        desde={inicioNo}
+        hasta={finNo}
         columnas={segunda.length > 12 ? 2 : 1}
         nota={faltaron ? "Registro oficial de asistencia de la Cámara" : "No votaron en ninguna votación del día (ausencia, pareo u otra razón: el registro no lo distingue)"}
       />
+      {frame >= fin3 ? (
+        <AbsoluteFill style={{ justifyContent: "center", gap: 80, paddingBottom: 220 }}>
+          <Cifra valor={String(c.diputados_que_votaron)} etiqueta="votaron" desde={fin3} />
+          <div>
+            <Cifra
+              tono={color.contra}
+              valor={String(faltaron ? c.diputados_ausentes ?? 0 : c.diputados_que_no_votaron_nunca ?? 0)}
+              etiqueta={faltaron ? "faltaron" : "no votaron ni una vez"}
+              desde={fin3 + 6}
+            />
+          </div>
+        </AbsoluteFill>
+      ) : null}
       <div style={{ position: "absolute", bottom: 90, width: "100%", textAlign: "center", fontFamily: fuenteTexto, color: color.gris, fontSize: 22 }}>
         Fuente: camara.cl · votaciones y sesiones de Sala
       </div>

@@ -108,13 +108,13 @@ export const Noticia: React.FC<{ titular: string; dato: Dato; indice: number; to
                 const max = Math.max(vp.si ?? 0, vp.no ?? 0, vp.abstencion ?? 0);
                 return (
                   <>
-                    <Barra etiqueta="A favor" valor={vp.si ?? 0} max={max} tono={color.favor} retraso={14} />
-                    <Barra etiqueta="En contra" valor={vp.no ?? 0} max={max} tono={color.contra} retraso={20} />
-                    <Barra etiqueta="Abstención" valor={vp.abstencion ?? 0} max={max} tono={color.abstencion} retraso={26} />
+                    <Barra etiqueta="A favor" valor={vp.si ?? 0} max={max} tono={color.favor} retraso={6} />
+                    <Barra etiqueta="En contra" valor={vp.no ?? 0} max={max} tono={color.contra} retraso={9} />
+                    <Barra etiqueta="Abstención" valor={vp.abstencion ?? 0} max={max} tono={color.abstencion} retraso={12} />
                   </>
                 );
               })()}
-              {resultado ? <Sello texto={resultado} desde={Math.round(durationInFrames * 0.45)} tono={tonoSello} /> : null}
+              {resultado ? <Sello texto={resultado} desde={Math.round(durationInFrames * 0.3)} tono={tonoSello} /> : null}
               <div style={{ textAlign: "center", fontFamily: fuenteTexto, color: color.gris, fontSize: 28, marginTop: 30 }}>
                 {[vp.tipo && `Votación ${vp.tipo.toLowerCase()}`, vp.quorum, vp.tramite].filter(Boolean).join(" · ")}
               </div>

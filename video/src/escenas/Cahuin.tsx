@@ -40,7 +40,7 @@ export const Cahuin: React.FC<{ cahuines: TCahuin[] }> = ({ cahuines }) => {
       </div>
       <div style={{ marginTop: 60, display: "flex", flexDirection: "column", gap: 26 }}>
         {lista.map((c, i) => {
-          const s = spring({ frame: frame - 12 - i * paso, fps, config: { damping: 15 } });
+          const s = spring({ frame: frame - 4 - i * paso, fps, config: { damping: 15 } });
           const t = texto(c);
           return (
             <div

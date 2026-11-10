@@ -1,12 +1,13 @@
 // Estructura de public/episodios/<fecha>/props.json (la genera `python -m guion.generar`).
 
-export type Palabra = { texto: string; desde_ms: number; hasta_ms: number; censurada?: boolean };
+export type Palabra = { texto: string; desde_ms: number; hasta_ms: number; censurada?: boolean; fin_frase?: boolean };
 
 export type Voz = {
   texto: string;
   audio: string; // ruta relativa a public/
   duracion_ms: number;
   palabras: Palabra[];
+  marcas?: Record<string, number>; // ms en que la narradora llega a una marca [[nombre]] del guion
 };
 
 export type Votacion = {

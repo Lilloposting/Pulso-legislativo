@@ -38,7 +38,7 @@ export const Episodio: React.FC<EpisodioProps> = (props) => {
           {e.tipo === "intro" ? (
             <Intro fecha={props.fecha} video={props.introVideo} />
           ) : e.tipo === "jornada" ? (
-            <Jornada jornada={e.jornada} palabras={e.voz.palabras} />
+            <Jornada jornada={e.jornada} palabras={e.voz.palabras} cues={e.voz.marcas} />
           ) : e.tipo === "cahuin" ? (
             <Cahuin cahuines={e.cahuines} />
           ) : e.tipo === "noticia" ? (
