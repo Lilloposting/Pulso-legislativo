@@ -25,8 +25,39 @@ VOZ_CANAL = "dZFAIFXrSaHlJY1R7xj2"
 ELEVEN_AJUSTES = {"stability": 0.38, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True, "speed": 1.12}
 
 
+CACHE = Path(__file__).with_name(".cache_voz")
+_FORZAR_GRATIS = False
+
+
+def usar_voz_gratis(si: bool = True) -> None:
+    """Modo borrador: siempre edge-tts, no gasta créditos de ElevenLabs."""
+    global _FORZAR_GRATIS
+    _FORZAR_GRATIS = si
+
+
 def motor() -> str:
-    return "elevenlabs" if os.getenv("ELEVENLABS_API_KEY") else "edge-tts"
+    return "elevenlabs" if os.getenv("ELEVENLABS_API_KEY") and not _FORZAR_GRATIS else "edge-tts"
+
+
+def _clave(texto: str) -> str:
+    """Identifica una narración: mismo texto + misma voz/ajustes = mismo audio (no se vuelve a pagar)."""
+    import hashlib
+    import json
+    if motor() == "elevenlabs":
+        base = ["elevenlabs", os.getenv("ELEVENLABS_VOICE_ID") or VOZ_CANAL,
+                os.getenv("ELEVENLABS_MODELO", "eleven_multilingual_v2"), ELEVEN_AJUSTES, texto]
+    else:
+        base = ["edge-tts", VOZ_EDGE, VELOCIDAD_EDGE, texto]
+    return hashlib.sha1(json.dumps(base, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:20]
+
+
+def texto_para_voz(texto: str) -> str:
+    """Texto exacto que se enviará a la voz (sin marcas [[...]] ni espacios extra)."""
+    return _quitar_marcas(re.sub(r"\s+", " ", texto).strip())[0]
+
+
+def en_cache(texto: str) -> bool:
+    return (CACHE / f"{_clave(texto_para_voz(texto))}.mp3").exists()
 
 
 # ---------------------------------------------------------------- ElevenLabs
@@ -113,6 +144,10 @@ def marcar_frases(palabras: list[dict], texto: str) -> list[dict]:
     cursor = 0
     bajo = texto.lower()
     for p in palabras:
+        if p["texto"][-1:] in ".,;:?!…":  # ElevenLabs deja la puntuación pegada a la palabra
+            p["fin_frase"] = True
+            cursor = max(cursor, bajo.find(p["texto"].lower(), cursor) + len(p["texto"]))
+            continue
         i = bajo.find(p["texto"].lower(), cursor)
         if i < 0:
             p["fin_frase"] = False
@@ -152,7 +187,15 @@ def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_sig
     texto, marcas = _quitar_marcas(re.sub(r"\s+", " ", texto).strip())
     texto_previo = _quitar_marcas(texto_previo)[0] if texto_previo else None
     texto_siguiente = _quitar_marcas(texto_siguiente)[0] if texto_siguiente else None
+    import json
+    import shutil
     usado = motor()
+    clave = _clave(texto)
+    en_c = CACHE / f"{clave}.mp3"
+    if en_c.exists():  # ya pagado: se reutiliza
+        shutil.copyfile(en_c, destino)
+        guardado = json.loads((CACHE / f"{clave}.json").read_text(encoding="utf-8"))
+        return {**guardado, "audio": destino.name}
     if usado == "elevenlabs":
         try:
             palabras = _elevenlabs(texto, destino, texto_previo, texto_siguiente)
@@ -165,8 +208,13 @@ def narrar(texto: str, destino: Path, texto_previo: str | None = None, texto_sig
         palabras = asyncio.run(_edge(texto, destino))
     palabras = censurar(marcar_frases(separar(palabras), texto))
     tiempos = {k: palabras[min(i, len(palabras) - 1)]["desde_ms"] for k, i in marcas.items() if palabras}
-    return {"texto": texto, "audio": destino.name, "duracion_ms": int(MP3(destino).info.length * 1000),
-            "palabras": palabras, "marcas": tiempos, "motor": usado}
+    out = {"texto": texto, "audio": destino.name, "duracion_ms": int(MP3(destino).info.length * 1000),
+           "palabras": palabras, "marcas": tiempos, "motor": usado}
+    if usado == motor():  # no guardar un respaldo de edge-tts bajo la clave de ElevenLabs
+        CACHE.mkdir(exist_ok=True)
+        shutil.copyfile(destino, en_c)
+        (CACHE / f"{clave}.json").write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+    return out
 
 
 def crear_pitido(destino: Path, segundos: float = 1.0, hz: int = 1000) -> None:

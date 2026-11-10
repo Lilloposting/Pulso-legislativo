@@ -19,6 +19,8 @@ export const color = {
 };
 
 export const FPS = 30;
+/** La voz se reproduce acelerada al montar el video (mantiene el tono). Cambiarla no gasta créditos. */
+export const VELOCIDAD_VOZ = 1.1;
 export const ANCHO = 1080;
 export const ALTO = 1920;
 export const MARGEN_ESCENA = 4; // frames extra al final de cada escena (ritmo rápido)

@@ -96,7 +96,7 @@ const Fachada: React.FC<{ frame: number; apertura: number }> = ({ frame, apertur
 export const Intro: React.FC<{ fecha: string; video?: string }> = ({ fecha, video }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const corte = Math.round(durationInFrames * 0.48); // momento en que cruzamos la puerta
+  const corte = Math.round(durationInFrames * 0.4); // momento en que cruzamos la puerta
 
   if (video) {
     return (

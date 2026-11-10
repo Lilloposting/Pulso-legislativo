@@ -22,3 +22,6 @@ video/node_modules/
 video/out/
 video/public/episodios/*
 !video/public/episodios/2026-11-09/
+
+# Caché de voces (audio ya pagado)
+guion/.cache_voz/

@@ -13,7 +13,7 @@ const Barra: React.FC<{ etiqueta: string; valor: number; max: number; tono: stri
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s = spring({ frame: frame - retraso, fps, config: { damping: 20, mass: 0.8 } });
+  const s = spring({ frame: frame - retraso, fps, config: { damping: 20, mass: 0.5, stiffness: 180 } });
   const n = Math.round(valor * s);
   return (
     <div style={{ marginBottom: 34 }}>
@@ -57,8 +57,8 @@ const Sello: React.FC<{ texto: string; desde: number; tono: string }> = ({ texto
 export const Noticia: React.FC<{ titular: string; dato: Dato; indice: number; total: number }> = ({ titular, dato, indice, total }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const entrada = spring({ frame, fps, config: { damping: 16 } });
-  const salida = interpolate(frame, [durationInFrames - 8, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
+  const entrada = spring({ frame, fps, config: { damping: 16, stiffness: 200 } });
+  const salida = interpolate(frame, [durationInFrames - 5, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
   const vp = dato.votacion_principal;
   const resultado = (vp?.resultado ?? "").toUpperCase();
   const tonoSello = resultado.startsWith("RECHAZ") ? color.contra : color.favor;
@@ -114,7 +114,7 @@ export const Noticia: React.FC<{ titular: string; dato: Dato; indice: number; to
                   </>
                 );
               })()}
-              {resultado ? <Sello texto={resultado} desde={Math.round(durationInFrames * 0.3)} tono={tonoSello} /> : null}
+              {resultado ? <Sello texto={resultado} desde={Math.round(durationInFrames * 0.2)} tono={tonoSello} /> : null}
               <div style={{ textAlign: "center", fontFamily: fuenteTexto, color: color.gris, fontSize: 28, marginTop: 30 }}>
                 {[vp.tipo && `Votación ${vp.tipo.toLowerCase()}`, vp.quorum, vp.tramite].filter(Boolean).join(" · ")}
               </div>

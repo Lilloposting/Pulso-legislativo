@@ -18,7 +18,7 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const Cifra: React.FC<{ valor: string; etiqueta: string; desde: number; tono?: string }> = ({ valor, etiqueta, desde, tono }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s = spring({ frame: frame - desde, fps, config: { damping: 14 } });
+  const s = spring({ frame: frame - desde, fps, config: { damping: 14, stiffness: 220 } });
   return (
     <div style={{ opacity: s, transform: `translateY(${(1 - s) * 40}px)`, textAlign: "center" }}>
       <div style={{ fontFamily: fuenteTitulos, fontWeight: 900, fontSize: 120, color: tono ?? color.blanco, lineHeight: 1 }}>{valor}</div>
@@ -46,7 +46,7 @@ const Lista: React.FC<{
   const filas = Math.ceil(personas.length / columnas);
   const altoLista = filas * alto_fila;
   const ventana = 1040;
-  const recorrido = Math.max(12, Math.min(hasta - desde - 4, rapido ? 55 : 80));
+  const recorrido = Math.max(12, Math.min(hasta - desde - 4, rapido ? 45 : 70));
   const desplazamiento = interpolate(frame, [desde + 3, desde + 3 + recorrido], [0, Math.max(0, altoLista - ventana)], clamp);
   const entrada = interpolate(frame, [desde, desde + 6], [0, 1], clamp);
   return (

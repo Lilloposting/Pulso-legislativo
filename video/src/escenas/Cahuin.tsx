@@ -17,7 +17,7 @@ export const Cahuin: React.FC<{ cahuines: TCahuin[] }> = ({ cahuines }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const lista = cahuines.filter((c) => c.tipo !== "no_votaron").slice(0, 5);
   const sello = spring({ frame, fps, config: { damping: 8, stiffness: 180 } });
-  const paso = Math.max(8, Math.floor((durationInFrames * 0.7) / Math.max(1, lista.length)));
+  const paso = Math.max(8, Math.floor((durationInFrames * 0.45) / Math.max(1, lista.length)));
   return (
     <AbsoluteFill style={{ background: `repeating-linear-gradient(135deg, #1a0a0a 0 40px, #240d0d 40px 80px)`, padding: "150px 60px" }}>
       <div
@@ -40,7 +40,7 @@ export const Cahuin: React.FC<{ cahuines: TCahuin[] }> = ({ cahuines }) => {
       </div>
       <div style={{ marginTop: 60, display: "flex", flexDirection: "column", gap: 26 }}>
         {lista.map((c, i) => {
-          const s = spring({ frame: frame - 4 - i * paso, fps, config: { damping: 15 } });
+          const s = spring({ frame: frame - 4 - i * paso, fps, config: { damping: 15, stiffness: 220 } });
           const t = texto(c);
           return (
             <div

@@ -30,18 +30,38 @@ PUBLIC = RAIZ / "video" / "public"
 GUIONES = RAIZ / "guiones"
 
 
+def segmentos_de(guion: dict) -> list[tuple]:
+    seg = [("intro", guion["gancho"], None)]
+    if guion.get("jornada"):
+        seg.append(("jornada", guion["jornada"], None))
+    seg += [("noticia", e["narracion"], e) for e in guion["escenas"]]
+    if guion.get("cahuin"):
+        seg.append(("cahuin", guion["cahuin"], None))
+    seg.append(("cierre", guion["cierre"], None))
+    return seg
+
+
+def presupuesto(guion: dict) -> int:
+    """Muestra qué escenas se van a narrar y cuántos caracteres de ElevenLabs cuesta. Devuelve el total."""
+    total = 0
+    print(f"\nVoz: {narrar.motor()}")
+    for tipo, texto, _ in segmentos_de(guion):
+        limpio = narrar.texto_para_voz(texto)
+        cache = narrar.en_cache(texto)
+        costo = 0 if cache or narrar.motor() != "elevenlabs" else len(limpio)
+        total += costo
+        print(f"  {tipo:8s} {len(limpio):4d} caracteres  {'(ya generado, gratis)' if cache else ''}")
+    if narrar.motor() == "elevenlabs":
+        print(f"  Costo en ElevenLabs: {total} caracteres")
+    return total
+
+
 def producir(ep: dict, guion: dict) -> None:
     """Voz + props.json a partir de datos y guion ya decididos."""
     carpeta = PUBLIC / "episodios" / ep["fecha"]
     rel = f"episodios/{ep['fecha']}"
     narrar.crear_pitido(PUBLIC / "pitido.wav")
-    segmentos = [("intro", guion["gancho"], None)]
-    if guion.get("jornada"):
-        segmentos.append(("jornada", guion["jornada"], None))
-    segmentos += [("noticia", e["narracion"], e) for e in guion["escenas"]]
-    if guion.get("cahuin"):
-        segmentos.append(("cahuin", guion["cahuin"], None))
-    segmentos += [("cierre", guion["cierre"], None)]
+    segmentos = segmentos_de(guion)
     por_id = {it["id"]: it for it in ep["items"]}
     escenas = []
     for i, (tipo, texto, esc) in enumerate(segmentos):
@@ -74,8 +94,18 @@ def main() -> None:
     ap.add_argument("--sin-ia", action="store_true")
     ap.add_argument("--forzar", action="store_true", help="producir aunque el guion tenga números no verificados")
     ap.add_argument("--max-items", type=int, default=4)
+    ap.add_argument("--borrador", action="store_true", help="voz gratis (edge-tts) para revisar sin gastar créditos")
+    ap.add_argument("--si", action="store_true", help="no pedir confirmación antes de gastar créditos de ElevenLabs")
     a = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    if a.borrador:
+        narrar.usar_voz_gratis()
+
+    def confirmar(guion: dict) -> None:
+        costo = presupuesto(guion)
+        if costo and not a.si:
+            if input("¿Generar la voz con ElevenLabs? [s/N] ").strip().lower() not in ("s", "si", "sí"):
+                raise SystemExit("Cancelado. Usa --borrador para revisar con la voz gratis.")
 
     if a.desde_guion:
         ep = json.loads(a.desde_guion.with_suffix("").with_suffix(".datos.json").read_text(encoding="utf-8"))
@@ -85,6 +115,7 @@ def main() -> None:
             print("Revisa el guion:\n- " + "\n- ".join(errores))
             if not a.forzar:
                 raise SystemExit("No se produjo nada. Corrige el guion o usa --forzar.")
+        confirmar(guion)
         producir(ep, guion)
         return
 
@@ -105,6 +136,11 @@ def main() -> None:
                                                        encoding="utf-8")
     archivo.escribir_md(ep, guion, md)
     print(f"Guion editable: {md}")
+    if narrar.motor() == "elevenlabs" and not a.si:  # primero se revisa el guion; la voz se paga después
+        print("Revisa y edita el guion; después produce la voz con:\n"
+              f"  python -m guion.generar --desde-guion {md.relative_to(RAIZ).as_posix()}"
+              "   (o agrega --borrador para la voz gratis)")
+        return
     producir(ep, guion)
 
 
